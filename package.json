@@ -1,12 +1,12 @@
 {
   "name": "embeewebi",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "private": true,
   "description": "Seu universo. Sua navegação.",
   "main": "main.cjs",
   "scripts": {
     "start": "electron .",
-    "check": "node --check main.cjs && node --check preload.cjs && node --check renderer.js && node --check cloud.cjs && node --check updates.cjs && node --check account-ui.js && node --check themes.js && node --check suggestions.cjs && node --check search-ui.js && node --check address-ui.js && node --check theme-gallery.js",
+    "check": "node --check main.cjs && node --check preload.cjs && node --check renderer.js && node --check cloud.cjs && node --check updates.cjs && node --check account-ui.js && node --check themes.js && node --check suggestions.cjs && node --check search-ui.js && node --check address-ui.js && node --check theme-gallery.js && node --check navigation-ui.js && node --check context-menus.cjs",
     "dist": "electron-builder",
     "publish:windows": "electron-builder --win --publish always"
   },
@@ -33,7 +33,9 @@
       "suggestions.cjs",
       "search-ui.js",
       "address-ui.js",
-      "theme-gallery.js"
+      "theme-gallery.js",
+      "navigation-ui.js",
+      "context-menus.cjs"
     ],
     "win": {
       "target": "nsis",
@@ -73,4 +75,3 @@
     "js-yaml": "5.5.0"
   }
 }
-
