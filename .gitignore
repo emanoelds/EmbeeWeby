@@ -10,3 +10,6 @@ release/
 *.pem
 account-session.bin
 work/
+
+private-update-access.bin
+
