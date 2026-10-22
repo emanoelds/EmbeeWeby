@@ -83,3 +83,5 @@ body[data-navigation-style] #address-form{overflow:hidden}
 #connection-security[data-security=https]{color:#79dfa3;background:#79dfa310}#connection-security[data-security=http],#connection-security[data-security=error]{color:#ff9b91;background:#ff9b9110}
 .light #connection-security[data-security=https]{color:#176638;background:#1766380d}.light #connection-security[data-security=http],.light #connection-security[data-security=error]{color:#a12d24;background:#a12d240d}
 #connection-security:hover{box-shadow:inset 0 0 0 1px currentColor}#connection-security:focus-visible{outline-offset:-2px}
+.toolbar #profile-button.toolbar-profile{display:flex;align-items:center;justify-content:center;width:34px;height:34px;min-width:34px;flex-shrink:0;padding:0;border:1px solid var(--line);border-radius:50%;background:var(--surface);color:var(--text);font-size:13px}
+.toolbar #profile-button .nav-label{display:none}.toolbar #profile-initial{width:24px;height:24px;line-height:1}.google-login{border:1px solid var(--line);background:var(--surface);padding:12px 18px;border-radius:12px;font-weight:600}.google-login:disabled{cursor:wait}
