@@ -110,3 +110,11 @@ O fluxo Build EmbeeWebi compila os três sistemas. Tags v* iniciam a compilaçã
 - As abas dividem o espaço disponível e diminuem conforme novas abas são abertas. Quando atingem a largura mínima, a faixa permite rolagem e mantém a aba ativa visível.
 - A aba ativa tem fundo destacado, borda na cor do tema, marca inferior e título mais forte.
 
+## Novidades da versão 0.5.5
+
+- Clique com o botão direito em uma aba para fechar esta aba, as anteriores, as posteriores, as outras ou todas. Ao fechar todas, uma nova aba vazia permanece aberta.
+- O botão da abelha no topo mostra ou oculta o menu lateral e salva a preferência. Ao reabrir, preserva a largura configurada.
+- Sugestões de sites incluem os ícones das páginas, com imagem de reserva quando necessário.
+- Ao confirmar uma sugestão ou endereço, a barra mostra a URL completa e acompanha redirecionamentos.
+- A busca da nova aba mantém o foco e o hover dentro da borda arredondada.
+
