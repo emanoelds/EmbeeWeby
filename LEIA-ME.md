@@ -82,3 +82,8 @@ O repositório privado emanoelds/EmbeeWebi foi criado. O código inclui verifica
 Verificado: menu e página nativa mudam juntos; largura é salva; login e perfis isolados em simulação; sincronização e conflito em simulação; endpoint real de autenticação e provedor de e-mail habilitados; login inválido rejeitado; acesso anônimo à tabela negado; armazenamento de sessão criptografado; políticas RLS verificadas com usuários temporários em transação integralmente revertida. Nenhuma conta de teste permanente foi criada. Cadastro com envio real de e-mail e aplicação de uma atualização remota ainda não foram testados. Auditoria das dependências distribuídas: nenhum alerta informado pelo npm; ferramentas de desenvolvimento ainda têm oito alertas moderados.
 
 Abra dist-0.5.0/win-unpacked/EmbeeWebi.exe ou execute o instalador EmbeeWebi Setup 0.5.0.exe após fechar a versão anterior.
+
+
+## Alinhamento das abas — 0.5.1
+
+Ícones e títulos alinhados à esquerda, centralizados na vertical, com espaçamento uniforme e área reservada para o botão de fechar à direita. O botão de fechar continua sem animação.
