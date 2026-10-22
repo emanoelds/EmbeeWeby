@@ -11,7 +11,7 @@ npm ci
 npm start
 ```
 
-`npm run check` verifica a sintaxe. `npm run dist` compila o pacote para o sistema atual. O fluxo manual **Build EmbeeWebi**, em Actions, prepara artefatos para os três sistemas; ele não publica versões automaticamente.
+`npm run check` verifica a sintaxe. `npm run dist` compila o pacote para o sistema atual. O fluxo **Build EmbeeWebi**, em Actions, prepara artefatos para os três sistemas. Tags `v*` também publicam instaladores e metadados em uma versão privada do próprio repositório.
 
 ## Recursos
 
@@ -33,11 +33,15 @@ Ao criar a conta, confirme o e-mail recebido e volte ao EmbeeWebi para entrar. A
 
 ## Atualizações
 
-O módulo `updates.cjs` usa `electron-updater`: verifica ao iniciar e a cada quatro horas, baixa versões disponíveis e agenda a instalação ao fechar, sem interromper uma sessão ativa.
+O canal está configurado para as versões privadas de https://github.com/emanoelds/EmbeeWebi/releases. Cada pessoa precisa ter acesso a esse repositório.
 
-**O canal de distribuição não está ativado.** Este repositório é privado e a distribuição será configurada separadamente. O aplicativo mostra esse estado nas configurações. Não incorpore tokens de acesso ao GitHub no cliente para contornar a privacidade do repositório.
+Em Configurações → Atualizações, autorize o computador com um token fine-grained do GitHub, limitado ao repositório EmbeeWebi e à permissão Contents: Read-only. Nunca envie esse token pelo chat ou coloque-o no código. Ele é validado pela API do GitHub e persistido com safeStorage somente quando existe um cofre seguro no sistema. Sem cofre, a autorização vale apenas durante a sessão. Também é possível abrir o canal no navegador e baixar usando a sessão do GitHub.
 
-Para ativar, configure um repositório de distribuição público em `release-config.json`, mantenha o código privado e publique os artefatos e metadados gerados pelo electron-builder. Configure `build.publish` para o mesmo destino. No Windows, configure o certificado de assinatura e o nome do publicador; no macOS, assinatura e notarização. O código bloqueia a atualização Windows enquanto não houver publicador configurado. Certificados e senhas devem ficar nos segredos do CI, nunca no Git.
+O navegador verifica versões ao iniciar e a cada quatro horas. A consulta funciona independentemente da assinatura de código. **A instalação automática continua bloqueada enquanto a assinatura não estiver configurada.** No Windows, ela exige o publicador correspondente à configuração embutida pelo electron-builder. Não se desativa a verificação de assinatura para ativar atualizações.
+
+Para publicar novas versões, atualize package.json/package-lock.json e envie uma tag v* correspondente. O workflow compila os três sistemas e envia arquivos e metadados à versão privada usando a autorização temporária do GitHub Actions. Uma execução manual sem tag só gera artefatos. Para publicação local, npm run publish:windows exige GH_TOKEN no ambiente; ele não é embutido no instalador.
+
+Para liberar instalação automática, configure a assinatura Windows no electron-builder, habilite a assinatura (o build de desenvolvimento usa signExecutable: false), configure publisherName em release-config.json e mantenha certificados e senhas nos segredos do CI. macOS exige assinatura e notarização próprias.
 
 ## Estado e validação
 

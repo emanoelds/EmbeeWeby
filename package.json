@@ -1,13 +1,14 @@
 {
   "name": "embeewebi",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "private": true,
   "description": "Seu universo. Sua navegação.",
   "main": "main.cjs",
   "scripts": {
     "start": "electron .",
     "check": "node --check main.cjs && node --check preload.cjs && node --check renderer.js && node --check cloud.cjs && node --check updates.cjs && node --check account-ui.js",
-    "dist": "electron-builder"
+    "dist": "electron-builder",
+    "publish:windows": "electron-builder --win --publish always"
   },
   "devDependencies": {
     "electron": "45.0.0",
@@ -49,7 +50,16 @@
       "oneClick": false,
       "allowToChangeInstallationDirectory": true,
       "perMachine": false
-    }
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "emanoelds",
+        "repo": "EmbeeWebi",
+        "private": true,
+        "releaseType": "release"
+      }
+    ]
   },
   "dependencies": {
     "@supabase/supabase-js": "2.118.0",

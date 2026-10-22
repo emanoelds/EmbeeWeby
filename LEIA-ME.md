@@ -87,3 +87,11 @@ Abra dist-0.5.0/win-unpacked/EmbeeWebi.exe ou execute o instalador EmbeeWebi Set
 ## Alinhamento das abas — 0.5.1
 
 Ícones e títulos alinhados à esquerda, centralizados na vertical, com espaçamento uniforme e área reservada para o botão de fechar à direita. O botão de fechar continua sem animação.
+
+## Canal de publicação privado — 0.5.2
+
+O canal usa as versões de https://github.com/emanoelds/EmbeeWebi/releases, respeitando o acesso ao repositório privado. Em Configurações → Atualizações, autorize o computador com um token fine-grained do GitHub limitado ao repositório EmbeeWebi e à permissão Contents: Read-only. O token é validado pela API do GitHub, nunca é incluído no instalador e só é lembrado quando o cofre seguro do sistema está disponível. Você também pode abrir o canal no navegador e usar sua sessão do GitHub.
+
+O aplicativo consulta versões ao iniciar e a cada quatro horas. Enquanto não houver assinatura de código configurada, ele consulta e informa novas versões, mas não baixa nem executa instaladores automaticamente. O bloqueio de instalação automática e a verificação de assinatura foram preservados.
+
+O fluxo Build EmbeeWebi compila os três sistemas. Tags v* iniciam a compilação e o envio dos instaladores e metadados para uma versão privada, usando somente a autorização temporária do GitHub Actions para o próprio repositório. Não há token pessoal embutido ou registrado no código.
