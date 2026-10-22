@@ -33,7 +33,8 @@
     "win": {
       "target": "nsis",
       "icon": "assets/bee-mark.ico",
-      "signExecutable": false
+      "signExecutable": false,
+      "artifactName": "${productName}-Setup-${version}.${ext}"
     },
     "linux": {
       "target": "AppImage",
