@@ -77,7 +77,7 @@ Clique no perfil na parte inferior do menu para criar uma conta ou entrar com e-
 
 A senha não é salva pelo aplicativo. A sessão fica no processo principal e usa o cofre criptografado do sistema quando disponível. A base online aplica RLS por usuário. Não há proteção criptográfica dos arquivos de histórico/notas locais contra outras pessoas com acesso à mesma conta do Windows.
 
-O repositório privado emanoelds/EmbeeWebi foi criado. O código inclui verificação automática de versões e instalação ao fechar, mas o canal de distribuição e a assinatura dos instaladores ainda precisam ser configurados. Nenhum token privado do GitHub é incluído no aplicativo. A tela de atualizações informa que o canal está pendente.
+O repositório privado emanoelds/EmbeeWebi foi criado e o canal privado de releases está conectado. Nenhum token privado é incluído no aplicativo.
 
 Verificado: menu e página nativa mudam juntos; largura é salva; login e perfis isolados em simulação; sincronização e conflito em simulação; endpoint real de autenticação e provedor de e-mail habilitados; login inválido rejeitado; acesso anônimo à tabela negado; armazenamento de sessão criptografado; políticas RLS verificadas com usuários temporários em transação integralmente revertida. Nenhuma conta de teste permanente foi criada. Cadastro com envio real de e-mail e aplicação de uma atualização remota ainda não foram testados. Auditoria das dependências distribuídas: nenhum alerta informado pelo npm; ferramentas de desenvolvimento ainda têm oito alertas moderados.
 
@@ -92,6 +92,21 @@ Abra dist-0.5.0/win-unpacked/EmbeeWebi.exe ou execute o instalador EmbeeWebi Set
 
 O canal usa as versões de https://github.com/emanoelds/EmbeeWebi/releases, respeitando o acesso ao repositório privado. Em Configurações → Atualizações, autorize o computador com um token fine-grained do GitHub limitado ao repositório EmbeeWebi e à permissão Contents: Read-only. O token é validado pela API do GitHub, nunca é incluído no instalador e só é lembrado quando o cofre seguro do sistema está disponível. Você também pode abrir o canal no navegador e usar sua sessão do GitHub.
 
-O aplicativo consulta versões ao iniciar e a cada quatro horas. Enquanto não houver assinatura de código configurada, ele consulta e informa novas versões, mas não baixa nem executa instaladores automaticamente. O bloqueio de instalação automática e a verificação de assinatura foram preservados.
+O aplicativo consulta versões apenas quando você clica em Verificar atualizações. Você escolhe o instalador no GitHub e o instala manualmente.
 
 O fluxo Build EmbeeWebi compila os três sistemas. Tags v* iniciam a compilação e o envio dos instaladores e metadados para uma versão privada, usando somente a autorização temporária do GitHub Actions para o próprio repositório. Não há token pessoal embutido ou registrado no código.
+
+## Novidades da versão 0.5.3
+
+- Atualizações somente por solicitação; download e instalação por escolha do usuário.
+- Botão × para remover cada atalho da nova aba; a lista pode ficar vazia e é salva por perfil.
+- Seis fundos ilustrados locais e 22 paletas de personagens, com suporte aos modos claro e escuro. Os cenários foram gerados para o projeto e não são quadros oficiais dos animes.
+
+## Novidades da versão 0.5.4
+
+- Sugestões na barra de endereço e na pesquisa da nova aba: Google, favoritos e histórico locais.
+- Setas para selecionar, Enter para navegar e Esc para fechar. A opção em Configurações permite desativar consultas online. Pesquisas digitadas são enviadas ao Google; favoritos e histórico ficam no aparelho.
+- Ctrl+F5 recarrega a página atual ignorando o cache; F5/Ctrl+R recarregam normalmente. Ctrl+Shift+R (Command+Shift+R no macOS) também ignora o cache.
+- As abas dividem o espaço disponível e diminuem conforme novas abas são abertas. Quando atingem a largura mínima, a faixa permite rolagem e mantém a aba ativa visível.
+- A aba ativa tem fundo destacado, borda na cor do tema, marca inferior e título mais forte.
+

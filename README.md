@@ -37,14 +37,29 @@ O canal está configurado para as versões privadas de https://github.com/emanoe
 
 Em Configurações → Atualizações, autorize o computador com um token fine-grained do GitHub, limitado ao repositório EmbeeWebi e à permissão Contents: Read-only. Nunca envie esse token pelo chat ou coloque-o no código. Ele é validado pela API do GitHub e persistido com safeStorage somente quando existe um cofre seguro no sistema. Sem cofre, a autorização vale apenas durante a sessão. Também é possível abrir o canal no navegador e baixar usando a sessão do GitHub.
 
-O navegador verifica versões ao iniciar e a cada quatro horas. A consulta funciona independentemente da assinatura de código. **A instalação automática continua bloqueada enquanto a assinatura não estiver configurada.** No Windows, ela exige o publicador correspondente à configuração embutida pelo electron-builder. Não se desativa a verificação de assinatura para ativar atualizações.
+A verificação de versões é manual: Configurações → Verificar atualizações. Quando houver uma versão nova, Escolher download abre o GitHub privado. Não há consulta periódica, download automático ou instalação ao fechar.
 
 Para publicar novas versões, atualize package.json/package-lock.json e envie uma tag v* correspondente. O workflow compila os três sistemas e envia arquivos e metadados à versão privada usando a autorização temporária do GitHub Actions. Uma execução manual sem tag só gera artefatos. Para publicação local, npm run publish:windows exige GH_TOKEN no ambiente; ele não é embutido no instalador.
 
-Para liberar instalação automática, configure a assinatura Windows no electron-builder, habilite a assinatura (o build de desenvolvimento usa signExecutable: false), configure publisherName em release-config.json e mantenha certificados e senhas nos segredos do CI. macOS exige assinatura e notarização próprias.
+Assinatura de código pode ser configurada futuramente para identificar o publicador, mas não ativa instalação automática. A atualização permanece uma escolha do usuário. macOS exige assinatura e notarização próprias.
 
 ## Estado e validação
 
 Versão inicial de desenvolvimento. Não inclui extensões, bloqueador de anúncios, gerenciador de senhas ou navegação privada. Reprodução DRM e compatibilidade com sites precisam de testes próprios. Existem alertas moderados nas dependências de ferramentas de desenvolvimento que ainda precisam de revisão antes de distribuição pública.
 
 Veja [LEIA-ME.md](LEIA-ME.md) para o histórico de mudanças e limites de cada versão.
+
+## Novidades da versão 0.5.3
+
+- Atualizações somente por solicitação; download e instalação por escolha do usuário.
+- Botão × para remover cada atalho da nova aba; a lista pode ficar vazia e é salva por perfil.
+- Seis fundos ilustrados locais e 22 paletas de personagens, com suporte aos modos claro e escuro. Os cenários foram gerados para o projeto e não são quadros oficiais dos animes.
+
+## Novidades da versão 0.5.4
+
+- Sugestões na barra de endereço e na pesquisa da nova aba: Google, favoritos e histórico locais.
+- Setas para selecionar, Enter para navegar e Esc para fechar. A opção em Configurações permite desativar consultas online. Pesquisas digitadas são enviadas ao Google; favoritos e histórico ficam no aparelho.
+- Ctrl+F5 recarrega a página atual ignorando o cache; F5/Ctrl+R recarregam normalmente. Ctrl+Shift+R (Command+Shift+R no macOS) também ignora o cache.
+- As abas dividem o espaço disponível e diminuem conforme novas abas são abertas. Quando atingem a largura mínima, a faixa permite rolagem e mantém a aba ativa visível.
+- A aba ativa tem fundo destacado, borda na cor do tema, marca inferior e título mais forte.
+
