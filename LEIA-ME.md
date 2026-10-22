@@ -118,3 +118,11 @@ O fluxo Build EmbeeWebi compila os três sistemas. Tags v* iniciam a compilaçã
 - Ao confirmar uma sugestão ou endereço, a barra mostra a URL completa e acompanha redirecionamentos.
 - A busca da nova aba mantém o foco e o hover dentro da borda arredondada.
 
+## 0.6.0 — Galerias dos personagens
+
+Cada um dos 23 personagens tem cinco ilustrações geradas: Retrato, Poder, Itens, Ambiente e Noite. Os seis cenários dos universos continuam disponíveis. Em Universos, escolha o anime e o personagem e selecione uma imagem na galeria. A imagem é lembrada separadamente por personagem e a escolha acompanha os dados sincronizados da conta.
+
+Há três níveis de decoração: Discreto, Equilibrado e Mais detalhes. Cada universo usa motivos visuais próprios. As imagens do aplicativo usam WebP e miniaturas locais para reduzir o tamanho e o custo de carregamento. Os PNGs originais e as descrições de geração ficam na pasta EmbeeWebi-artes-originais, fora do instalador.
+
+As ilustrações foram geradas com a ferramenta integrada de geração de imagens; não são capturas oficiais dos animes. Os ambientes são composições imaginativas associadas aos personagens.
+

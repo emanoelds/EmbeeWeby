@@ -1,12 +1,12 @@
 {
   "name": "embeewebi",
-  "version": "0.5.5",
+  "version": "0.6.0",
   "private": true,
   "description": "Seu universo. Sua navegação.",
   "main": "main.cjs",
   "scripts": {
     "start": "electron .",
-    "check": "node --check main.cjs && node --check preload.cjs && node --check renderer.js && node --check cloud.cjs && node --check updates.cjs && node --check account-ui.js && node --check themes.js && node --check suggestions.cjs && node --check search-ui.js",
+    "check": "node --check main.cjs && node --check preload.cjs && node --check renderer.js && node --check cloud.cjs && node --check updates.cjs && node --check account-ui.js && node --check themes.js && node --check suggestions.cjs && node --check search-ui.js && node --check address-ui.js && node --check theme-gallery.js",
     "dist": "electron-builder",
     "publish:windows": "electron-builder --win --publish always"
   },
@@ -31,24 +31,26 @@
       "account-ui.js",
       "themes.js",
       "suggestions.cjs",
-      "search-ui.js"
+      "search-ui.js",
+      "address-ui.js",
+      "theme-gallery.js"
     ],
     "win": {
       "target": "nsis",
-      "icon": "assets/bee-mark.ico",
+      "icon": "assets/app-icon.ico",
       "signExecutable": false,
       "artifactName": "${productName}-Setup-${version}.${ext}"
     },
     "linux": {
       "target": "AppImage",
-      "icon": "assets/bee-icon.png"
+      "icon": "assets/app-icon.png"
     },
     "mac": {
       "target": [
         "dmg",
         "zip"
       ],
-      "icon": "assets/bee-icon.png"
+      "icon": "assets/app-icon.png"
     },
     "nsis": {
       "oneClick": false,
