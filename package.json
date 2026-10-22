@@ -1,12 +1,12 @@
 {
   "name": "embeewebi",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "private": true,
   "description": "Seu universo. Sua navegação.",
   "main": "main.cjs",
   "scripts": {
     "start": "electron .",
-    "check": "node --check main.cjs && node --check preload.cjs && node --check renderer.js && node --check cloud.cjs && node --check updates.cjs && node --check account-ui.js && node --check themes.js && node --check suggestions.cjs && node --check search-ui.js && node --check address-ui.js && node --check theme-gallery.js && node --check navigation-ui.js && node --check context-menus.cjs",
+    "check": "node --check main.cjs && node --check preload.cjs && node --check renderer.js && node --check cloud.cjs && node --check updates.cjs && node --check account-ui.js && node --check themes.js && node --check suggestions.cjs && node --check search-ui.js && node --check address-ui.js && node --check theme-gallery.js && node --check navigation-ui.js && node --check context-menus.cjs && node --check tools-ui.js && node --check browser-tools.cjs",
     "dist": "electron-builder",
     "publish:windows": "electron-builder --win --publish always"
   },
@@ -35,7 +35,9 @@
       "address-ui.js",
       "theme-gallery.js",
       "navigation-ui.js",
-      "context-menus.cjs"
+      "context-menus.cjs",
+      "tools-ui.js",
+      "browser-tools.cjs"
     ],
     "win": {
       "target": "nsis",
@@ -72,6 +74,7 @@
   "dependencies": {
     "@supabase/supabase-js": "2.118.0",
     "electron-updater": "6.8.9",
-    "js-yaml": "5.5.0"
+    "js-yaml": "5.5.0",
+    "qrcode": "1.5.4"
   }
 }

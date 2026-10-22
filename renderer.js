@@ -63,3 +63,5 @@ for(const name of ['back','forward','reload','home'])document.querySelector('#'+
 initAddressUI();
 
 initBrowserMenus();
+
+initBrowserTools();
