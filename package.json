@@ -1,0 +1,59 @@
+{
+  "name": "embeewebi",
+  "version": "0.5.0",
+  "private": true,
+  "description": "Seu universo. Sua navegação.",
+  "main": "main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "check": "node --check main.cjs && node --check preload.cjs && node --check renderer.js && node --check cloud.cjs && node --check updates.cjs && node --check account-ui.js",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "45.0.0",
+    "electron-builder": "26.15.3"
+  },
+  "build": {
+    "appId": "com.embeewebi.browser",
+    "productName": "EmbeeWebi",
+    "files": [
+      "main.cjs",
+      "preload.cjs",
+      "renderer.js",
+      "index.html",
+      "style.css",
+      "assets/**/*",
+      "cloud.cjs",
+      "cloud-config.json",
+      "updates.cjs",
+      "release-config.json",
+      "account-ui.js"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "assets/bee-mark.ico",
+      "signExecutable": false
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "assets/bee-icon.png"
+    },
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "icon": "assets/bee-icon.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "perMachine": false
+    }
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.118.0",
+    "electron-updater": "6.8.9",
+    "js-yaml": "5.5.0"
+  }
+}

@@ -1,0 +1,12 @@
+node_modules/
+dist*/
+release/
+*.log
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.pem
+account-session.bin
+work/
