@@ -1,128 +1,19 @@
-# EmbeeWebi — versão inicial 0.4
+# EmbeeWeby 0.6.9
 
-Navegador desktop com temas de seis animes e 22 personagens, cores próprias, abas reais, pesquisa, favoritos, histórico local (até 500 entradas), downloads, captura de página, notas e atalhos. A interface também pode ser aberta em `index.html` como demonstração; a navegação real exige o aplicativo Electron.
+O aplicativo passa a se chamar EmbeeWeby. A identidade de instalação e a pasta de dados anterior são mantidas para preservar perfis, cookies, favoritos e senhas. O repositório de distribuição permanece emanoelds/EmbeeWebi.
 
-## Executar
+Configurações: Escuro, Claro ou Dispositivo, acompanhando mudanças do sistema em tempo real. Fontes predefinidas ou instaladas, tamanhos separados para interface/abas/URL, peso, cores e restauração. Os sites mantêm sua própria tipografia. Preferências acompanham a conta; fontes locais precisam existir em cada computador.
 
-Instale Node.js e, nesta pasta, execute:
+Temas: EmbeeWeby como padrão de novos perfis e EmbeeSign como alternativa. Escolhas anteriores são preservadas. Os temas de anime continuam disponíveis.
 
-```
-npm install
-npm start
-```
+Portais: editar nome e endereço pelo lápis ou clique direito; cancelar preserva o original. Arrastar links para abas abre na aba de destino; soltar no + ou espaço vazio cria outra.
 
-`npm run check` verifica sintaxe. `npm run dist` gera o pacote do sistema atual: instalador NSIS no Windows, AppImage no Linux ou DMG no macOS. Compile e teste cada plataforma no respectivo sistema. Os pacotes não têm assinatura digital configurada.
+URL: foco seleciona o conteúdo; colar substitui o endereço inteiro. HTTPS só recebe confirmação após navegação principal bem-sucedida com validação do Chromium. Falhas de certificado são bloqueadas. Erros de iframe não contaminam o indicador principal. Barra e painel usam o mesmo estado de conexão.
 
-## Personalização
+Atualizações: verificação manual; Baixar e instalar inicia download dentro do aplicativo, exibe progresso, permite cancelar e solicita instalação/reabertura após a validação. Acesso ao repositório privado continua necessário. Não há consulta nem download automático na inicialização. Proteções e verificações do atualizador são preservadas. Fluxo de instalação validado com substitutos de teste; atualização real exige uma versão futura e pode depender dos requisitos de assinatura de cada plataforma.
 
-Abra ✦ Personalizar, escolha um universo e um personagem. As paletas alteram a página inicial e os destaques da interface. Configurações permitem trocar a cor, reduzir movimento e usar página inicial clara. O catálogo fica em `renderer.js`; adicione universos e personagens ao array `universes`.
+Histórico e Configurações abrem como abas internas e reutilizam a aba existente. Uma nova guia vazia é aproveitada quando ainda não existe uma aba correspondente.
 
-Não há arte, voz, músicas ou logotipos oficiais de anime neste pacote. O cenário é original em CSS. Obtenha as autorizações necessárias antes de distribuir materiais de terceiros.
+Clima: ícone e temperatura ao lado do perfil; configurações de cidade, Celsius/Fahrenheit e visibilidade. Atualização a cada 10 minutos, sem localização automática. Dados Open-Meteo. A cidade fica salva localmente por perfil.
 
-## Estado do projeto
-
-Esta é uma base funcional inicial, não uma versão pronta para substituir um navegador principal. Não inclui extensões Chrome, sincronização, bloqueador de anúncios, navegação privada, gerenciador de senhas, atualização automática ou catálogo remoto. Reprodução com DRM e compatibilidade de serviços precisam de testes próprios. Não promete anonimato nem proteção completa contra rastreamento ou phishing.
-
-Conteúdo remoto usa WebContentsView com sandbox, contextIsolation e Node.js desativado. Somente HTTP/HTTPS pode ser navegado; novas janelas viram abas. A ponte privilegiada fica apenas na interface local e valida o remetente. Permissões de câmera, localização, notificações e microfone são negadas. Certificados inválidos não recebem exceções. Downloads usam o mecanismo nativo do Electron. Cookies e cache podem ser apagados nas configurações. Histórico, favoritos, temas e notas ficam no armazenamento local do perfil; não são criptografados pelo aplicativo.
-
-Antes de distribuição pública: auditoria de segurança, política de atualizações, assinatura de instaladores, testes em três sistemas, acessibilidade, tratamento de permissões por site e licenças de dependências. Mantenha Electron atualizado. A instalação gera um arquivo de lock para fixar versões resolvidas.
-
-## Verificação realizada no Windows
-
-Passaram: sintaxe JavaScript; abertura da interface; catálogo; aplicação de personagem; criação e fechamento de abas; persistência de notas; navegação HTTP em página local; título da página; sandbox; isolamento de contexto; ausência de Node.js na página remota. O pacote Windows foi gerado. Não foram testados sites externos, DRM, downloads reais nem execução em Linux/macOS.
-
-A instalação informou oito alertas moderados na árvore de dependências de desenvolvimento. A distribuição pública depende de revisar e resolver esses alertas; a auditoria completa não foi concluída nesta sessão.
-
-## Página inicial configurável
-
-Em Configurações → Página inicial, escolha Google, Yahoo, DuckDuckGo, Página Nova aba ou endereço HTTP/HTTPS personalizado e clique em Salvar página inicial. O botão da casa abre o destino na guia atual. A preferência permanece salva ao reabrir o navegador. O botão + continua criando uma nova aba independente. Esta configuração é separada dos temas e não altera o mecanismo de pesquisa da barra de endereço (Google nesta versão).
-
-Verificado: cinco opções, persistência local, rejeição de protocolos inseguros e retorno à nova aba ou endereço personalizado mantendo a mesma guia. As demais configurações do Chrome ainda não foram reproduzidas integralmente.
-
-## Janela própria — 0.2
-
-A barra de título nativa foi removida. A barra de abas agora contém controles próprios para minimizar, maximizar/restaurar e fechar. Arraste pela área livre superior para mover a janela. O pacote Windows atualizado fica em dist-0.2.0/win-unpacked/EmbeeWebi.exe; mantenha os arquivos dessa pasta juntos. Feche a versão anterior e abra esse novo executável para usar as alterações. Os controles foram testados no Windows.
-
-## Marca e interações — 0.3
-
-A abelha fornecida pelo usuário está na barra lateral, na nova aba, no ícone da janela e no executável Windows. O ICO inclui 16, 24, 32, 48, 64, 128 e 256 pixels. A arte original foi preservada. O nome redundante ao lado das abas foi removido.
-
-Abas arredondadas têm animações de abertura e fechamento, realce da aba ativa, indicador de carregamento e favicon do site. Ícones remotos são limitados em tamanho e convertidos para PNG antes de chegar à interface. Há ícone genérico quando o site não informa um favicon utilizável. Os elementos das abas permanecem estáveis durante carregamentos para evitar reiniciar animações a cada atualização.
-
-Barra de rolagem personalizada na interface e estilo discreto nas páginas carregadas (páginas com estilos próprios podem prevalecer). Botões, atalhos, busca, personagens e painéis têm efeitos suaves. A preferência Reduzir movimento e a configuração de movimento reduzido do sistema são respeitadas. Uma animação nunca bloqueia o fechamento de uma guia.
-
-Pacote atualizado: dist-0.3.0/win-unpacked/EmbeeWebi.exe. Feche a versão anterior e abra esse executável, mantendo os arquivos da pasta juntos. Testados no Windows: logo, favicon de página HTTP local, abas estáveis, abertura e fechamento animados, redução de movimento, restauração da nova aba e página inicial configurável. Linux e macOS continuam sem testes nesta sessão.
-
-## Rolagem, modos e ícones — 0.4
-
-A barra superior e a lateral ficam fixas. Somente o conteúdo abaixo da navegação rola, com barra fina personalizada. Os painéis têm rolagem própria e cabeçalho fixo. O modo claro agora abrange barra de abas, navegação, lateral, campos e painéis; o modo escuro usa a mesma estrutura de cores. A cor de destaque dos textos é ajustada para manter contraste, preservando a paleta original nos elementos decorativos. O botão Modo claro fica em Configurações → Personalização.
-
-Favicons aceitam PNG, JPEG, SVG, ICO, GIF e WebP. São verificadas múltiplas opções declaradas pelo site, redirecionamentos HTTP/HTTPS e os caminhos favicon.ico/apple-touch-icon.png. Ícones dos atalhos também são carregados diretamente dos respectivos sites, sem serviço de ícones de terceiros. O ícone genérico permanece quando nenhuma opção válida estiver disponível. O tamanho dos arquivos é limitado e as páginas remotas continuam isoladas da interface.
-
-A marca lateral usa até 70 pixels, os ícones das páginas 22 pixels e a abelha da nova aba 28 pixels. O ícone do aplicativo teve as margens vazias reduzidas em uma cópia para ocupar melhor o espaço disponível; a imagem original está preservada em assets/bee-mark.png. O tamanho final de atalhos na área de trabalho continua sendo controlado pelo sistema operacional.
-
-Pacote atualizado: dist-0.4.0/win-unpacked/EmbeeWebi.exe. Verificado no Windows: sete cenários de favicon (PNG, SVG, ICO, redirecionamento, descoberta alternativa, múltiplas opções e SVG inline), rolagem independente, barras fixas, contraste de texto maior que 7:1 e destaque maior ou igual a 4,5:1 na paleta testada, painéis claros, ícones ampliados e comportamento da casa na mesma guia. Prévias foram conferidas visualmente nos dois modos.
-
-## Ajustes de acabamento — 0.4.1
-
-Ícones nas abas sem fundo ou preenchimento extra. Marca lateral reduzida para 48 pixels. Barra de endereço com formato arredondado, foco indicado pelo contorno do próprio campo e efeitos recortados pela borda. O ícone e o texto formam um grupo centralizado em cada aba; o botão de fechar ocupa posição fixa à direita, sem animação ou transição, inclusive no hover. Conferido visualmente no Windows, incluindo foco da URL e hover do favorito e do botão de fechar.
-
-Pacote atualizado: dist-0.4.1/win-unpacked/EmbeeWebi.exe.
-
-## Menu ajustável, conta online e atualização preparada — 0.5
-
-Arraste a borda direita do menu lateral para escolher entre 60 e 240 pixels, use as setas após selecionar a borda ou ajuste em Configurações → Menu lateral. Dê dois cliques na borda para voltar ao padrão. Os rótulos aparecem a partir de 150 pixels e a largura é lembrada.
-
-Clique no perfil na parte inferior do menu para criar uma conta ou entrar com e-mail e senha. O serviço de autenticação está conectado ao projeto EmbeeTech. Confirme o e-mail recebido antes de entrar. Favoritos, atalhos, notas, tema e preferências são sincronizados ao alterar e periodicamente; os dados locais e os cookies dos sites ficam separados por conta. Conflitos entre computadores exigem escolher quais dados manter. Histórico, cookies e senhas dos sites não são sincronizados.
-
-A senha não é salva pelo aplicativo. A sessão fica no processo principal e usa o cofre criptografado do sistema quando disponível. A base online aplica RLS por usuário. Não há proteção criptográfica dos arquivos de histórico/notas locais contra outras pessoas com acesso à mesma conta do Windows.
-
-O repositório privado emanoelds/EmbeeWebi foi criado e o canal privado de releases está conectado. Nenhum token privado é incluído no aplicativo.
-
-Verificado: menu e página nativa mudam juntos; largura é salva; login e perfis isolados em simulação; sincronização e conflito em simulação; endpoint real de autenticação e provedor de e-mail habilitados; login inválido rejeitado; acesso anônimo à tabela negado; armazenamento de sessão criptografado; políticas RLS verificadas com usuários temporários em transação integralmente revertida. Nenhuma conta de teste permanente foi criada. Cadastro com envio real de e-mail e aplicação de uma atualização remota ainda não foram testados. Auditoria das dependências distribuídas: nenhum alerta informado pelo npm; ferramentas de desenvolvimento ainda têm oito alertas moderados.
-
-Abra dist-0.5.0/win-unpacked/EmbeeWebi.exe ou execute o instalador EmbeeWebi Setup 0.5.0.exe após fechar a versão anterior.
-
-
-## Alinhamento das abas — 0.5.1
-
-Ícones e títulos alinhados à esquerda, centralizados na vertical, com espaçamento uniforme e área reservada para o botão de fechar à direita. O botão de fechar continua sem animação.
-
-## Canal de publicação privado — 0.5.2
-
-O canal usa as versões de https://github.com/emanoelds/EmbeeWebi/releases, respeitando o acesso ao repositório privado. Em Configurações → Atualizações, autorize o computador com um token fine-grained do GitHub limitado ao repositório EmbeeWebi e à permissão Contents: Read-only. O token é validado pela API do GitHub, nunca é incluído no instalador e só é lembrado quando o cofre seguro do sistema está disponível. Você também pode abrir o canal no navegador e usar sua sessão do GitHub.
-
-O aplicativo consulta versões apenas quando você clica em Verificar atualizações. Você escolhe o instalador no GitHub e o instala manualmente.
-
-O fluxo Build EmbeeWebi compila os três sistemas. Tags v* iniciam a compilação e o envio dos instaladores e metadados para uma versão privada, usando somente a autorização temporária do GitHub Actions para o próprio repositório. Não há token pessoal embutido ou registrado no código.
-
-## Novidades da versão 0.5.3
-
-- Atualizações somente por solicitação; download e instalação por escolha do usuário.
-- Botão × para remover cada atalho da nova aba; a lista pode ficar vazia e é salva por perfil.
-- Seis fundos ilustrados locais e 22 paletas de personagens, com suporte aos modos claro e escuro. Os cenários foram gerados para o projeto e não são quadros oficiais dos animes.
-
-## Novidades da versão 0.5.4
-
-- Sugestões na barra de endereço e na pesquisa da nova aba: Google, favoritos e histórico locais.
-- Setas para selecionar, Enter para navegar e Esc para fechar. A opção em Configurações permite desativar consultas online. Pesquisas digitadas são enviadas ao Google; favoritos e histórico ficam no aparelho.
-- Ctrl+F5 recarrega a página atual ignorando o cache; F5/Ctrl+R recarregam normalmente. Ctrl+Shift+R (Command+Shift+R no macOS) também ignora o cache.
-- As abas dividem o espaço disponível e diminuem conforme novas abas são abertas. Quando atingem a largura mínima, a faixa permite rolagem e mantém a aba ativa visível.
-- A aba ativa tem fundo destacado, borda na cor do tema, marca inferior e título mais forte.
-
-## Novidades da versão 0.5.5
-
-- Clique com o botão direito em uma aba para fechar esta aba, as anteriores, as posteriores, as outras ou todas. Ao fechar todas, uma nova aba vazia permanece aberta.
-- O botão da abelha no topo mostra ou oculta o menu lateral e salva a preferência. Ao reabrir, preserva a largura configurada.
-- Sugestões de sites incluem os ícones das páginas, com imagem de reserva quando necessário.
-- Ao confirmar uma sugestão ou endereço, a barra mostra a URL completa e acompanha redirecionamentos.
-- A busca da nova aba mantém o foco e o hover dentro da borda arredondada.
-
-## 0.6.0 — Galerias dos personagens
-
-Cada um dos 23 personagens tem cinco ilustrações geradas: Retrato, Poder, Itens, Ambiente e Noite. Os seis cenários dos universos continuam disponíveis. Em Universos, escolha o anime e o personagem e selecione uma imagem na galeria. A imagem é lembrada separadamente por personagem e a escolha acompanha os dados sincronizados da conta.
-
-Há três níveis de decoração: Discreto, Equilibrado e Mais detalhes. Cada universo usa motivos visuais próprios. As imagens do aplicativo usam WebP e miniaturas locais para reduzir o tamanho e o custo de carregamento. Os PNGs originais e as descrições de geração ficam na pasta EmbeeWebi-artes-originais, fora do instalador.
-
-As ilustrações foram geradas com a ferramenta integrada de geração de imagens; não são capturas oficiais dos animes. Os ambientes são composições imaginativas associadas aos personagens.
-
+Marca: abelha ampliada dentro de octógono tecnológico amarelo-dourado. Ícones PNG, SVG e ICO multirresolução atualizados.

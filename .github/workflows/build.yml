@@ -1,4 +1,4 @@
-name: Build EmbeeWebi
+name: Build EmbeeWeby
 on:
   workflow_dispatch:
   push:
@@ -25,7 +25,7 @@ jobs:
       - run: npm exec electron-builder -- --publish never
       - uses: actions/upload-artifact@v4
         with:
-          name: EmbeeWebi-${{ matrix.os }}
+          name: EmbeeWeby-${{ matrix.os }}
           path: |
             dist/*.exe
             dist/*.AppImage
@@ -52,8 +52,9 @@ jobs:
       - name: Publish private release assets
         shell: bash
         run: |
-          gh release view "$RELEASE_TAG" >/dev/null 2>&1 || gh release create "$RELEASE_TAG" --title "EmbeeWebi $RELEASE_TAG" --generate-notes --latest
+          gh release view "$RELEASE_TAG" >/dev/null 2>&1 || gh release create "$RELEASE_TAG" --title "EmbeeWeby $RELEASE_TAG" --generate-notes --latest
           for artifact in release/*; do
             gh release upload "$RELEASE_TAG" "$artifact" --clobber
           done
+
 

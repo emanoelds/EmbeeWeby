@@ -1,4 +1,4 @@
-# EmbeeWebi
+# EmbeeWeby
 
 Navegador desktop personalizável para Windows, Linux e macOS. Projeto privado de Emanoel Santos.
 
