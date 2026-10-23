@@ -1,0 +1,1 @@
+const {contextBridge,ipcRenderer}=require('electron');contextBridge.exposeInMainWorld('qrReader',{openLink:url=>ipcRenderer.invoke('qr-reader','open',url),close:()=>ipcRenderer.invoke('qr-reader','close')});
