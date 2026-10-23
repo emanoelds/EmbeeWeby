@@ -1,12 +1,12 @@
 {
   "name": "embeewebi",
-  "version": "0.6.4",
+  "version": "0.6.5",
   "private": true,
   "description": "Seu universo. Sua navegação.",
   "main": "main.cjs",
   "scripts": {
     "start": "electron .",
-    "check": "node --check main.cjs && node --check preload.cjs && node --check renderer.js && node --check cloud.cjs && node --check updates.cjs && node --check account-ui.js && node --check themes.js && node --check suggestions.cjs && node --check search-ui.js && node --check address-ui.js && node --check theme-gallery.js && node --check navigation-ui.js && node --check context-menus.cjs && node --check tools-ui.js && node --check browser-tools.cjs && node --check data-transfer.cjs && node --check google-auth.cjs && node --check transfer-ui.js",
+    "check": "node --check main.cjs && node --check preload.cjs && node --check renderer.js && node --check cloud.cjs && node --check updates.cjs && node --check account-ui.js && node --check themes.js && node --check suggestions.cjs && node --check search-ui.js && node --check address-ui.js && node --check theme-gallery.js && node --check navigation-ui.js && node --check context-menus.cjs && node --check tools-ui.js && node --check browser-tools.cjs && node --check data-transfer.cjs && node --check google-auth.cjs && node --check transfer-ui.js && node --check bookmarks-ui.js && node --check navigation-background.js && node --check navigation-media.cjs",
     "dist": "electron-builder",
     "publish:windows": "electron-builder --win --publish always"
   },
@@ -40,7 +40,10 @@
       "browser-tools.cjs",
       "data-transfer.cjs",
       "google-auth.cjs",
-      "transfer-ui.js"
+      "transfer-ui.js",
+      "bookmarks-ui.js",
+      "navigation-background.js",
+      "navigation-media.cjs"
     ],
     "win": {
       "target": "nsis",
