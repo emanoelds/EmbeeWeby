@@ -1,19 +1,19 @@
-# EmbeeWeby 0.6.9
+# EmbeeWeby 0.8.0
 
-O aplicativo passa a se chamar EmbeeWeby. A identidade de instalação e a pasta de dados anterior são mantidas para preservar perfis, cookies, favoritos e senhas. O repositório de distribuição permanece emanoelds/EmbeeWebi.
+## Configurações
 
-Configurações: Escuro, Claro ou Dispositivo, acompanhando mudanças do sistema em tempo real. Fontes predefinidas ou instaladas, tamanhos separados para interface/abas/URL, peso, cores e restauração. Os sites mantêm sua própria tipografia. Preferências acompanham a conta; fontes locais precisam existir em cada computador.
+Nova página com menu lateral, busca por categorias e cartões. Seções: conta, aparência, fontes, barras e navegação, página inicial e janela, pesquisa, privacidade, senhas, favoritos, clima, atualizações e informações do aplicativo. Os controles já disponíveis foram preservados e reorganizados. O buscador padrão da URL agora pode ser Google, DuckDuckGo, Bing ou Yahoo.
 
-Temas: EmbeeWeby como padrão de novos perfis e EmbeeSign como alternativa. Escolhas anteriores são preservadas. Os temas de anime continuam disponíveis.
+## Senhas e favoritos
 
-Portais: editar nome e endereço pelo lápis ou clique direito; cancelar preserva o original. Arrastar links para abas abre na aba de destino; soltar no + ou espaço vazio cria outra.
+Removidos o recurso de cofre sincronizado por frase secreta e suas ações de criptografar/abrir com senha extra. As senhas locais existentes continuam no mesmo arquivo protegido pelo sistema operacional. O Gerenciador de senhas permite buscar, mostrar/ocultar, copiar, remover com confirmação, importar e exportar CSV. A senha revelada é ocultada ao sair da janela e após 20 segundos. As senhas não são sincronizadas com a conta nem preenchidas automaticamente nos sites nesta versão.
 
-URL: foco seleciona o conteúdo; colar substitui o endereço inteiro. HTTPS só recebe confirmação após navegação principal bem-sucedida com validação do Chromium. Falhas de certificado são bloqueadas. Erros de iframe não contaminam o indicador principal. Barra e painel usam o mesmo estado de conexão.
+Importação/exportação HTML de favoritos fica em Favoritos e no próprio gerenciador. O HTML de pastas ainda é reunido em uma lista na transferência; a organização por pastas dentro do navegador continua disponível. Nenhuma senha local foi apagada por esta alteração.
 
-Atualizações: verificação manual; Baixar e instalar inicia download dentro do aplicativo, exibe progresso, permite cancelar e solicita instalação/reabertura após a validação. Acesso ao repositório privado continua necessário. Não há consulta nem download automático na inicialização. Proteções e verificações do atualizador são preservadas. Fluxo de instalação validado com substitutos de teste; atualização real exige uma versão futura e pode depender dos requisitos de assinatura de cada plataforma.
+## Impressão
 
-Histórico e Configurações abrem como abas internas e reutilizam a aba existente. Uma nova guia vazia é aproveitada quando ainda não existe uma aba correspondente.
+Ctrl+P e os menus abrem uma janela de prévia dedicada. O conteúdo é capturado da página ativa, nunca de um site oculto por Nova guia ou Configurações. O navegador gera um PDF real, detecta sua quantidade de páginas e oferece seleção como 1, 3-5. Há destino (impressoras instaladas ou PDF), A4/Carta/Ofício, retrato/paisagem, escala, cópias, margens, fundos e cor para impressão física. O PDF visualizado e exportado respeita a seleção de páginas.
 
-Clima: ícone e temperatura ao lado do perfil; configurações de cidade, Celsius/Fahrenheit e visibilidade. Atualização a cada 10 minutos, sem localização automática. Dados Open-Meteo. A cidade fica salva localmente por perfil.
+Validação com documento de três páginas, prévia de páginas 2–3 e exportação de duas páginas, intervalos inválidos, impressora inexistente, seleção da página correta e opções de impressão com impressora simulada. Não foi feita impressão física em hardware. A saída física depende do driver e das regras de impressão do site.
 
-Marca: abelha ampliada dentro de octógono tecnológico amarelo-dourado. Ícones PNG, SVG e ICO multirresolução atualizados.
+A interface informa recursos ainda indisponíveis: extensões Chrome, sincronização do Chrome e preenchimento automático de senhas. Não há promessa de paridade completa com o Chrome.

@@ -1,12 +1,12 @@
 {
   "name": "embeeweby",
-  "version": "0.7.2",
+  "version": "0.8.0",
   "private": true,
   "description": "Seu universo. Sua navegação.",
   "main": "main.cjs",
   "scripts": {
     "start": "electron .",
-    "check": "node --check main.cjs && node --check preload.cjs && node --check renderer.js && node --check cloud.cjs && node --check updates.cjs && node --check account-ui.js && node --check themes.js && node --check suggestions.cjs && node --check search-ui.js && node --check address-ui.js && node --check theme-gallery.js && node --check navigation-ui.js && node --check context-menus.cjs && node --check tools-ui.js && node --check browser-tools.cjs && node --check data-transfer.cjs && node --check google-auth.cjs && node --check transfer-ui.js && node --check bookmarks-ui.js && node --check navigation-background.js && node --check navigation-media.cjs && node --check history-privacy-ui.js && node --check custom-theme-ui.js && node --check privacy-data.cjs && node --check connection-popover.cjs && node --check connection-preload.cjs && node --check typography-ui.js && node --check connection-status.js && node --check connection-tracking.cjs && node --check weather.cjs && node --check weather-ui.js && node --check window-state.cjs && node --check tab-navigation.cjs",
+    "check": "node --check main.cjs && node --check preload.cjs && node --check renderer.js && node --check cloud.cjs && node --check updates.cjs && node --check account-ui.js && node --check themes.js && node --check suggestions.cjs && node --check search-ui.js && node --check address-ui.js && node --check theme-gallery.js && node --check navigation-ui.js && node --check context-menus.cjs && node --check tools-ui.js && node --check browser-tools.cjs && node --check data-transfer.cjs && node --check google-auth.cjs && node --check transfer-ui.js && node --check bookmarks-ui.js && node --check navigation-background.js && node --check navigation-media.cjs && node --check history-privacy-ui.js && node --check custom-theme-ui.js && node --check privacy-data.cjs && node --check connection-popover.cjs && node --check connection-preload.cjs && node --check typography-ui.js && node --check connection-status.js && node --check connection-tracking.cjs && node --check weather.cjs && node --check weather-ui.js && node --check window-state.cjs && node --check tab-navigation.cjs && node --check settings-ui.js && node --check print-preview.cjs && node --check print-preload.cjs && node --check print-ui.js",
     "dist": "electron-builder",
     "publish:windows": "electron-builder --win --publish always"
   },
@@ -55,7 +55,13 @@
       "weather.cjs",
       "weather-ui.js",
       "window-state.cjs",
-      "tab-navigation.cjs"
+      "tab-navigation.cjs",
+      "settings-ui.js",
+      "print-preview.cjs",
+      "print-preload.cjs",
+      "print.html",
+      "print.css",
+      "print-ui.js"
     ],
     "win": {
       "target": "nsis",
@@ -93,6 +99,7 @@
     "@supabase/supabase-js": "2.118.0",
     "electron-updater": "6.8.9",
     "js-yaml": "5.5.0",
+    "pdf-lib": "1.17.1",
     "qrcode": "1.5.4"
   }
 }
