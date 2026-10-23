@@ -6,3 +6,13 @@
 - Removidos o preload, o script e o canal IPC exclusivos dos botões automáticos.
 
 Validação: teste Electron com cliques direitos reais via Chromium confirmou Copiar nas seleções internas e em site local, Colar no campo editável, ausência de popup ao selecionar e bordas calculadas com largura zero. Verificação de sintaxe dos módulos aprovada.
+
+## Pastas da barra de favoritos
+
+- Pastas arrastáveis na barra, com marca indicando a posição antes/depois e ordem salva nas preferências sincronizadas.
+- A movimentação preserva subpastas e favoritos; Alt+Shift+setas também muda a ordem das pastas visíveis.
+- Cada pasta abre um menu nativo com seus sites e subpastas, além da opção de gerenciamento.
+- Seta » mostra as pastas e os favoritos que não couberem na barra. A lista se ajusta ao redimensionar a janela e a seta desaparece quando todos os itens cabem.
+- Mantidas as correções de copiar/colar somente no clique direito e da barra sem bordas.
+
+Validação adicional: arrastar pastas e indicador, preservação da hierarquia, ordem na sincronização, menus e abertura de sites, transbordamento em duas larguras de janela, reordenação por teclado e bordas zero.
