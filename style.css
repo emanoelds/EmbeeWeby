@@ -140,3 +140,6 @@ body[data-brand-theme] main#home-page,body.light[data-brand-theme] main#home-pag
 .tabline.empty-tab-drop{box-shadow:inset 0 -2px 0 var(--accent-ink,var(--accent))}#home-page.empty-home-drop{outline:2px dashed var(--accent-ink,var(--accent));outline-offset:-12px}
 
 .tab-insert-marker{position:fixed;width:3px;border-radius:5px;background:var(--accent-ink,var(--accent));box-shadow:0 0 8px var(--accent);pointer-events:none;z-index:99999}
+
+#bookmarks-bar{border:0;box-shadow:none}#bookmarks-bar>button{border:0;box-shadow:none}body.bookmarks-bar-visible>header{border-bottom:0}
+
