@@ -4,7 +4,7 @@ function initSearchSuggestions(){
  const popup=el('div',undefined,'search-suggestions');popup.id='search-suggestions';popup.role='listbox';popup.hidden=true;document.body.append(popup);
  function close(){clearTimeout(timer);revision++;popup.hidden=true;popup.replaceChildren();if(current){current.setAttribute('aria-expanded','false');current.removeAttribute('aria-activedescendant')}current=null;items=[];selected=-1;call('overlay',Boolean(document.querySelector('#panel').open));}
  function position(){if(!current)return;const rect=current.closest('form').getBoundingClientRect();popup.style.left=rect.left+'px';popup.style.top=(rect.bottom+6)+'px';popup.style.width=rect.width+'px';}
- function choose(index){const item=items[index];if(!item)return;close();call('navigate',item.value);}
+ function choose(index){const item=items[index];if(!item)return;close();prepareAddressNavigation(item.value);call('navigate',item.value);}
  function draw(input,query,remote=[]){
   if(document.activeElement!==input||input.value.trim()!==query)return;
   current=input;items=[];selected=-1;const used=new Set();
@@ -29,4 +29,3 @@ function searchSuggestionSettings(body){
  body.append(el('h3','Sugestões de pesquisa'));
  const label=el('label'),toggle=el('input');toggle.type='checkbox';toggle.checked=prefs.searchSuggestions!==false;toggle.onchange=()=>{prefs.searchSuggestions=toggle.checked;save('prefs',prefs);document.dispatchEvent(new Event('search-suggestions-close'))};label.append(toggle,document.createTextNode(' Mostrar sugestões online do Google'));body.append(label,el('p','Ao digitar uma pesquisa, o texto é enviado ao Google para obter sugestões. Endereços, histórico e favoritos não são enviados por esse recurso. Desative para usar apenas sugestões locais.','muted'));
 }
-

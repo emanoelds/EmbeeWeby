@@ -1,6 +1,6 @@
 {
   "name": "embeewebi",
-  "version": "0.6.7",
+  "version": "0.6.8",
   "private": true,
   "description": "Seu universo. Sua navegação.",
   "main": "main.cjs",
