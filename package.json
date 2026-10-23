@@ -1,12 +1,12 @@
 {
   "name": "embeewebi",
-  "version": "0.6.6",
+  "version": "0.6.7",
   "private": true,
   "description": "Seu universo. Sua navegação.",
   "main": "main.cjs",
   "scripts": {
     "start": "electron .",
-    "check": "node --check main.cjs && node --check preload.cjs && node --check renderer.js && node --check cloud.cjs && node --check updates.cjs && node --check account-ui.js && node --check themes.js && node --check suggestions.cjs && node --check search-ui.js && node --check address-ui.js && node --check theme-gallery.js && node --check navigation-ui.js && node --check context-menus.cjs && node --check tools-ui.js && node --check browser-tools.cjs && node --check data-transfer.cjs && node --check google-auth.cjs && node --check transfer-ui.js && node --check bookmarks-ui.js && node --check navigation-background.js && node --check navigation-media.cjs && node --check history-privacy-ui.js && node --check custom-theme-ui.js && node --check privacy-data.cjs && node --check connection-popover.cjs",
+    "check": "node --check main.cjs && node --check preload.cjs && node --check renderer.js && node --check cloud.cjs && node --check updates.cjs && node --check account-ui.js && node --check themes.js && node --check suggestions.cjs && node --check search-ui.js && node --check address-ui.js && node --check theme-gallery.js && node --check navigation-ui.js && node --check context-menus.cjs && node --check tools-ui.js && node --check browser-tools.cjs && node --check data-transfer.cjs && node --check google-auth.cjs && node --check transfer-ui.js && node --check bookmarks-ui.js && node --check navigation-background.js && node --check navigation-media.cjs && node --check history-privacy-ui.js && node --check custom-theme-ui.js && node --check privacy-data.cjs && node --check connection-popover.cjs && node --check connection-preload.cjs",
     "dist": "electron-builder",
     "publish:windows": "electron-builder --win --publish always"
   },
@@ -47,7 +47,8 @@
       "history-privacy-ui.js",
       "custom-theme-ui.js",
       "privacy-data.cjs",
-      "connection-popover.cjs"
+      "connection-popover.cjs",
+      "connection-preload.cjs"
     ],
     "win": {
       "target": "nsis",
