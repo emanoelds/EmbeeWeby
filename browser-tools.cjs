@@ -21,7 +21,7 @@ function createBrowserTools({window,current,command,navigate}){
  case 'find':if(wc&&typeof data?.text==='string'){if(data.text.trim())wc.findInPage(data.text.slice(0,1000),{forward:data.forward!==false,findNext:Boolean(data.next),matchCase:false});else wc.stopFindInPage('clearSelection');}return {ok:true};
  case 'find-close':wc?.stopFindInPage('clearSelection');return {ok:true};
  case 'zoom-in':case 'zoom-out':case 'zoom-reset':if(wc)wc.setZoomLevel(action==='zoom-reset'?0:Math.max(-5,Math.min(5,wc.getZoomLevel()+(action==='zoom-in'?.5:-.5))));return {ok:true};
- case 'fullscreen':window.setFullScreen(!window.isFullScreen());return {ok:true};
+ case 'cast-info':return {ok:true,platform:process.platform,systemAvailable:['win32','darwin'].includes(process.platform)};case 'cast-system':{const uri=process.platform==='win32'?'ms-settings-connectabledevices:devicediscovery':process.platform==='darwin'?'x-apple.systempreferences:com.apple.Displays-Settings.extension':'';if(!uri)throw Error('Use o compartilhamento de tela disponível na sua distribuição Linux.');await require('electron').shell.openExternal(uri);return {ok:true,opened:true};}case 'fullscreen':window.setFullScreen(!window.isFullScreen());return {ok:true};
  default:return {ok:false,message:'Ferramenta indisponível.'};
  }}catch(e){return {ok:false,message:e.message||'Não foi possível concluir esta ação.'}}}
  return {run};

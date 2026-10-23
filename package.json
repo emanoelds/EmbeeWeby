@@ -1,12 +1,12 @@
 {
   "name": "embeeweby",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "private": true,
   "description": "Seu universo. Sua navegação.",
   "main": "main.cjs",
   "scripts": {
     "start": "electron .",
-    "check": "node --check main.cjs && node --check preload.cjs && node --check renderer.js && node --check cloud.cjs && node --check updates.cjs && node --check account-ui.js && node --check themes.js && node --check suggestions.cjs && node --check search-ui.js && node --check address-ui.js && node --check theme-gallery.js && node --check navigation-ui.js && node --check context-menus.cjs && node --check tools-ui.js && node --check browser-tools.cjs && node --check data-transfer.cjs && node --check google-auth.cjs && node --check transfer-ui.js && node --check bookmarks-ui.js && node --check navigation-background.js && node --check navigation-media.cjs && node --check history-privacy-ui.js && node --check custom-theme-ui.js && node --check privacy-data.cjs && node --check connection-popover.cjs && node --check connection-preload.cjs && node --check typography-ui.js && node --check connection-status.js && node --check connection-tracking.cjs && node --check weather.cjs && node --check weather-ui.js && node --check window-state.cjs && node --check tab-navigation.cjs && node --check settings-ui.js && node --check print-preview.cjs && node --check print-preload.cjs && node --check print-ui.js && node --check session-state.cjs",
+    "check": "node --check main.cjs && node --check preload.cjs && node --check renderer.js && node --check cloud.cjs && node --check updates.cjs && node --check account-ui.js && node --check themes.js && node --check suggestions.cjs && node --check search-ui.js && node --check address-ui.js && node --check theme-gallery.js && node --check navigation-ui.js && node --check context-menus.cjs && node --check tools-ui.js && node --check browser-tools.cjs && node --check data-transfer.cjs && node --check google-auth.cjs && node --check transfer-ui.js && node --check bookmarks-ui.js && node --check navigation-background.js && node --check navigation-media.cjs && node --check history-privacy-ui.js && node --check custom-theme-ui.js && node --check privacy-data.cjs && node --check connection-popover.cjs && node --check connection-preload.cjs && node --check typography-ui.js && node --check connection-status.js && node --check connection-tracking.cjs && node --check weather.cjs && node --check weather-ui.js && node --check window-state.cjs && node --check tab-navigation.cjs && node --check settings-ui.js && node --check print-preview.cjs && node --check print-preload.cjs && node --check print-ui.js && node --check session-state.cjs && node --check bookmark-format.cjs && node --check theme-chooser.js && node --check extensions.cjs",
     "dist": "electron-builder",
     "publish:windows": "electron-builder --win --publish always"
   },
@@ -62,7 +62,10 @@
       "print.html",
       "print.css",
       "print-ui.js",
-      "session-state.cjs"
+      "session-state.cjs",
+      "bookmark-format.cjs",
+      "theme-chooser.js",
+      "extensions.cjs"
     ],
     "win": {
       "target": "nsis",
