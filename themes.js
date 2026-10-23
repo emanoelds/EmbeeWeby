@@ -17,6 +17,5 @@ function applyAnimeScene(universeIndex,characterIndex){
  const copy=document.querySelector('.hero-copy>p');if(copy)copy.textContent=scene.label+' · '+palette[2]+'.';
  const mark=document.querySelector('.art-jp');if(mark)mark.textContent=scene.symbol;
  const caption=document.querySelector('.art-caption');if(caption)caption.textContent=scene.label;
- const art=document.querySelector('.art');if(art)art.setAttribute('aria-label',scene.label);
+ const art=document.querySelector('.art');if(art)art.setAttribute('aria-label',scene.label);applyCustomTheme();
 }
-
