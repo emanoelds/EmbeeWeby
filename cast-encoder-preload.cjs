@@ -1,0 +1,1 @@
+const {contextBridge,ipcRenderer}=require('electron');contextBridge.exposeInMainWorld('castEncoder',{send:(type,data)=>ipcRenderer.send('cast-encoder',type,data)});

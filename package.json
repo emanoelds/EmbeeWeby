@@ -1,12 +1,12 @@
 {
   "name": "embeeweby",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "private": true,
   "description": "Seu universo. Sua navegação.",
   "main": "main.cjs",
   "scripts": {
     "start": "electron .",
-    "check": "node --check main.cjs && node --check preload.cjs && node --check renderer.js && node --check cloud.cjs && node --check updates.cjs && node --check account-ui.js && node --check themes.js && node --check suggestions.cjs && node --check search-ui.js && node --check address-ui.js && node --check theme-gallery.js && node --check navigation-ui.js && node --check context-menus.cjs && node --check tools-ui.js && node --check browser-tools.cjs && node --check data-transfer.cjs && node --check google-auth.cjs && node --check transfer-ui.js && node --check bookmarks-ui.js && node --check navigation-background.js && node --check navigation-media.cjs && node --check history-privacy-ui.js && node --check custom-theme-ui.js && node --check privacy-data.cjs && node --check connection-popover.cjs && node --check connection-preload.cjs && node --check typography-ui.js && node --check connection-status.js && node --check connection-tracking.cjs && node --check weather.cjs && node --check weather-ui.js && node --check window-state.cjs && node --check tab-navigation.cjs && node --check settings-ui.js && node --check print-preview.cjs && node --check print-preload.cjs && node --check print-ui.js && node --check session-state.cjs && node --check bookmark-format.cjs && node --check theme-chooser.js && node --check extensions.cjs",
+    "check": "node --check main.cjs && node --check preload.cjs && node --check renderer.js && node --check cloud.cjs && node --check updates.cjs && node --check account-ui.js && node --check themes.js && node --check suggestions.cjs && node --check search-ui.js && node --check address-ui.js && node --check theme-gallery.js && node --check navigation-ui.js && node --check context-menus.cjs && node --check tools-ui.js && node --check browser-tools.cjs && node --check data-transfer.cjs && node --check google-auth.cjs && node --check transfer-ui.js && node --check bookmarks-ui.js && node --check navigation-background.js && node --check navigation-media.cjs && node --check history-privacy-ui.js && node --check custom-theme-ui.js && node --check privacy-data.cjs && node --check connection-popover.cjs && node --check connection-preload.cjs && node --check typography-ui.js && node --check connection-status.js && node --check connection-tracking.cjs && node --check weather.cjs && node --check weather-ui.js && node --check window-state.cjs && node --check tab-navigation.cjs && node --check settings-ui.js && node --check print-preview.cjs && node --check print-preload.cjs && node --check print-ui.js && node --check session-state.cjs && node --check bookmark-format.cjs && node --check theme-chooser.js && node --check extensions.cjs && node --check chromecast.cjs && node --check cast-mirror.cjs && node --check cast-encoder.js && node --check cast-encoder-preload.cjs && node --check cast-ui.js && node --check selection-ui.js && node --check selection-preload.cjs",
     "dist": "electron-builder",
     "publish:windows": "electron-builder --win --publish always"
   },
@@ -65,7 +65,15 @@
       "session-state.cjs",
       "bookmark-format.cjs",
       "theme-chooser.js",
-      "extensions.cjs"
+      "extensions.cjs",
+      "chromecast.cjs",
+      "cast-mirror.cjs",
+      "cast-encoder.html",
+      "cast-encoder.js",
+      "cast-encoder-preload.cjs",
+      "cast-ui.js",
+      "selection-ui.js",
+      "selection-preload.cjs"
     ],
     "win": {
       "target": "nsis",
@@ -82,7 +90,13 @@
         "dmg",
         "zip"
       ],
-      "icon": "assets/app-icon.png"
+      "icon": "assets/app-icon.png",
+      "extendInfo": {
+        "NSLocalNetworkUsageDescription": "O EmbeeWeby procura Chromecasts na rede local para transmitir a mídia e as abas que você escolher.",
+        "NSBonjourServices": [
+          "_googlecast._tcp"
+        ]
+      }
     },
     "nsis": {
       "oneClick": false,
@@ -101,9 +115,16 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "2.118.0",
+    "bonjour-service": "1.4.4",
+    "castv2-client": "1.2.0",
     "electron-updater": "6.8.9",
     "js-yaml": "5.5.0",
     "pdf-lib": "1.17.1",
     "qrcode": "1.5.4"
+  },
+  "overrides": {
+    "castv2": {
+      "protobufjs": "8.8.1"
+    }
   }
 }
