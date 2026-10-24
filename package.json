@@ -1,6 +1,6 @@
 {
   "name": "embeeweby",
-  "version": "0.9.6",
+  "version": "0.9.7",
   "private": true,
   "description": "Seu universo. Sua navegação.",
   "main": "main.cjs",
@@ -78,13 +78,16 @@
       "qr-reader.html",
       "qr-reader.css",
       "qr-reader.js",
-      "menu-icons.cjs"
+      "menu-icons.cjs",
+      "settings-polish.css",
+      "theme-polish.css"
     ],
     "win": {
       "target": "nsis",
       "icon": "assets/app-icon.ico",
       "signExecutable": false,
-      "artifactName": "${productName}-Setup-${version}.${ext}"
+      "artifactName": "${productName}-Setup-${version}.${ext}",
+      "executableName": "EmbeeWeby"
     },
     "linux": {
       "target": "AppImage",
@@ -107,7 +110,8 @@
     "nsis": {
       "oneClick": false,
       "allowToChangeInstallationDirectory": true,
-      "perMachine": false
+      "perMachine": false,
+      "include": "installer.nsh"
     },
     "publish": [
       {
