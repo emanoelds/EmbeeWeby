@@ -1,15 +1,20 @@
-const {isIP}=require('node:net');
+const {pageTranslation}=require('./translation-page.cjs');
 const languages=[['pt','Português'],['en','Inglês'],['es','Espanhol'],['fr','Francês'],['de','Alemão'],['it','Italiano'],['ja','Japonês'],['ko','Coreano'],['zh-CN','Chinês (simplificado)']];
-function translationURL(value,language='pt'){
- if(!languages.some(([id])=>id===language))throw Error('Idioma de tradução inválido.');
- let u;try{u=new URL(value)}catch{throw Error('Abra um site para traduzir.');}
- const host=u.hostname.toLowerCase().replace(/\.$/,'');
- if(!['http:','https:'].includes(u.protocol)||u.username||u.password||u.href.length>8192||isIP(host)||host.includes(':')||!host.includes('.')||['localhost','local','internal','test','invalid'].some(s=>host===s||host.endsWith('.'+s)))throw Error('A tradução está disponível para sites públicos HTTP ou HTTPS, sem credenciais no endereço.');
- u.hash='';const target=new URL('https://translate.google.com/translate');target.searchParams.set('sl','auto');target.searchParams.set('tl',language);target.searchParams.set('u',u.href);return target.href;
+const runs=new WeakMap();
+function validateLanguage(language){if(!languages.some(([id])=>id===language))throw Error('Idioma de tradução inválido.');}
+async function translateTexts(texts,language,fetcher=fetch,keepGoing=()=>true){
+ validateLanguage(language);if(!Array.isArray(texts)||texts.length>2000||texts.some(t=>typeof t!=='string'||t.length>4000)||texts.reduce((n,t)=>n+t.length,0)>160000)throw Error('Texto acima do limite de tradução.');
+ const parts=texts.map(text=>{const out=[];let current='';for(const token of text.match(/\s+|\S+/gu)||[]){for(const char of token){if(encodeURIComponent(current+char).length>4500){out.push(current);current='';}current+=char;}}if(current)out.push(current);return out;});const unique=[...new Set(parts.flat())],translated=new Map(),batches=[];let batch=[],size=0;
+ for(const text of unique){const length=encodeURIComponent(text).length;if(batch.length&&(size+length>5500||batch.length===20)){batches.push(batch);batch=[];size=0;}batch.push(text);size+=length;}if(batch.length)batches.push(batch);
+ for(const batch of batches){if(!keepGoing())throw Error('Tradução cancelada.');const url=new URL('https://clients5.google.com/translate_a/t');url.searchParams.set('client','dict-chrome-ex');url.searchParams.set('sl','auto');url.searchParams.set('tl',language);for(const text of batch)url.searchParams.append('q',text);
+ const r=await fetcher(url.href,{signal:AbortSignal.timeout(15000),credentials:'omit',redirect:'error'});if(!r.ok)throw Error(r.status===429?'O serviço de tradução está temporariamente ocupado. Tente novamente mais tarde.':'O serviço de tradução não respondeu (HTTP '+r.status+').');
+ const raw=await r.text();if(raw.length>500000)throw Error('Resposta de tradução inválida.');let result;try{result=JSON.parse(raw)}catch{throw Error('Resposta de tradução inválida.');}if(!Array.isArray(result)||result.length!==batch.length||result.some(row=>!Array.isArray(row)||typeof row[0]!=='string'))throw Error('Resposta de tradução inválida.');batch.forEach((text,i)=>translated.set(text,result[i][0]));
+ }return parts.map(chunks=>chunks.map(text=>translated.get(text)).join(' '));
 }
-async function translatePage({url,language='pt',window,dialog,open,isCurrent=()=>true}){
- let target;try{target=translationURL(url,language)}catch(error){await dialog.showMessageBox(window,{type:'info',title:'Traduzir site',message:error.message});return {ok:false};}
- const result=await dialog.showMessageBox(window,{type:'question',title:'Traduzir site',message:'Traduzir para '+languages.find(([id])=>id===language)[1]+'?',detail:'O endereço completo desta página será enviado ao Google Tradutor. A versão traduzida será aberta em uma nova aba. Sites com login e páginas privadas podem não ser traduzidos.',buttons:['Traduzir','Cancelar'],defaultId:0,cancelId:1,noLink:true});
- if(result.response!==0||!isCurrent())return {ok:false,canceled:true};open(target);return {ok:true};
+async function inPage(wc,action,data){return wc.executeJavaScriptInIsolatedWorld(1007,[{code:'('+pageTranslation.toString()+')('+JSON.stringify(action)+','+JSON.stringify(data)+')'}]);}
+async function restorePage(wc){runs.set(wc,Symbol());return inPage(wc,'restore',null);}
+async function translatePage({wc,language='pt',window,dialog,isCurrent=()=>true,fetcher}){
+ validateLanguage(language);if(!wc||wc.isDestroyed()||!/^https?:/.test(wc.getURL()))throw Error('Abra um site para traduzir.');const url=wc.getURL(),token=Symbol();runs.set(wc,token);let navigated=false;const mark=(_e,_url,inPlace,main)=>{if(main&&!inPlace)navigated=true;};wc.on('did-start-navigation',mark);const current=()=>!navigated&&!wc.isDestroyed()&&runs.get(wc)===token&&wc.getURL()===url&&isCurrent();
+ try{const r=await dialog.showMessageBox(window,{type:'question',title:'Traduzir site',message:'Traduzir para '+languages.find(([id])=>id===language)[1]+'?',detail:'O texto visível da página será enviado ao Google para tradução. Campos de senha, formulários e textos editáveis são ignorados. A tradução fica nesta aba e você pode mostrar o original pelo menu.',buttons:['Traduzir','Cancelar'],defaultId:0,cancelId:1,noLink:true});if(r.response!==0||!current())return {ok:false,canceled:true};const {items,truncated}=await inPage(wc,'collect',null);if(!items.length)return {ok:true,count:0};const texts=await translateTexts(items.map(i=>i.text),language,fetcher,current);if(!current())return {ok:false,canceled:true};const count=await inPage(wc,'apply',items.map((i,index)=>({id:i.id,text:texts[index]})));return {ok:true,count,truncated};}catch(error){if(!current())return {ok:false,canceled:true};throw error;}finally{wc.removeListener('did-start-navigation',mark);}
 }
-module.exports={languages,translationURL,translatePage};
+module.exports={languages,translateTexts,translatePage,restorePage,inPage};
