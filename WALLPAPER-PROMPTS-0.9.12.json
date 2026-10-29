@@ -1,0 +1,1065 @@
+{
+  "mode": "built-in image_gen",
+  "images": [
+    {
+      "u": 0,
+      "c": 0,
+      "id": "sage",
+      "name": "Modo Sábio",
+      "description": "Transformação · Modo Sábio",
+      "prompt": "Use case: stylized-concept. Asset type: one standalone 16:9 anime browser wallpaper. Scene and subject: Naruto Uzumaki in canonical Sage Mode, orange eye pigmentation, horizontal pupils, red sage cloak, Mount Myoboku giant toad stone statues and misty plants, calm Rasengan training. Premium cinematic cel-shaded anime illustration, clear and recognizable character design, coherent environment and story, accurate costume and anatomy. Place subject predominantly to the right, keep left third subdued and usable for browser text. Wide landscape at least 1536x864. No text, no watermark, no collage, no split panels, no UI. Do not combine unrelated character transformations or powers.",
+      "file": "assets/characters/expanded-0-0-sage.jpg",
+      "thumbnail": "assets/characters/expanded-0-0-sage-thumb.jpg"
+    },
+    {
+      "u": 1,
+      "c": 0,
+      "id": "gear-five",
+      "name": "Gear 5",
+      "description": "Transformação · Gear 5",
+      "prompt": "Use case: stylized-concept. Asset type: one standalone 16:9 anime browser wallpaper. Scene and subject: Monkey D. Luffy in canonical Gear Five, white fluffy hair and white open shirt and shorts, purple sash, cloud-like white ring around shoulders, rubbery joyful pose on Onigashima rooftop under a huge moon, natural two arms and two legs. Premium cinematic cel-shaded anime illustration, clear and recognizable character design, coherent environment and story, accurate costume and anatomy. Place subject predominantly to the right, keep left third subdued and usable for browser text. Wide landscape at least 1536x864. No text, no watermark, no collage, no split panels, no UI. Do not combine unrelated character transformations or powers.",
+      "file": "assets/characters/expanded-1-0-gear-five.jpg",
+      "thumbnail": "assets/characters/expanded-1-0-gear-five-thumb.jpg"
+    },
+    {
+      "u": 2,
+      "c": 0,
+      "id": "hinokami",
+      "name": "Hinokami Kagura",
+      "description": "Técnica · Hinokami Kagura",
+      "prompt": "Use case: stylized-concept. Asset type: one standalone 16:9 anime browser wallpaper. Scene and subject: Tanjiro Kamado performing Hinokami Kagura, black hair with burgundy tips, forehead scar, hanafuda earrings, green-black checkered haori, one black nichirin katana tracing an elegant circular flame arc in a snowy Japanese forest at night, no random extra blades. Premium cinematic cel-shaded anime illustration, clear and recognizable character design, coherent environment and story, accurate costume and anatomy. Place subject predominantly to the right, keep left third subdued and usable for browser text. Wide landscape at least 1536x864. No text, no watermark, no collage, no split panels, no UI. Do not combine unrelated character transformations or powers.",
+      "file": "assets/characters/expanded-2-0-hinokami.jpg",
+      "thumbnail": "assets/characters/expanded-2-0-hinokami-thumb.jpg"
+    },
+    {
+      "u": 3,
+      "c": 0,
+      "id": "hollow-purple",
+      "name": "Roxo",
+      "description": "Técnica · Roxo",
+      "prompt": "Use case: stylized-concept. Asset type: one standalone 16:9 anime browser wallpaper. Scene and subject: Satoru Gojo, white hair, brilliant blue eyes, dark high collar uniform, performing Hollow Purple: a single concentrated violet energy sphere between two fingers, blue and red residual arcs, ruined empty Shinjuku street at dusk, composed focused expression; no invented physical transformation. Premium cinematic cel-shaded anime illustration, clear and recognizable character design, coherent environment and story, accurate costume and anatomy. Place subject predominantly to the right, keep left third subdued and usable for browser text. Wide landscape at least 1536x864. No text, no watermark, no collage, no split panels, no UI. Do not combine unrelated character transformations or powers.",
+      "file": "assets/characters/expanded-3-0-hollow-purple.jpg",
+      "thumbnail": "assets/characters/expanded-3-0-hollow-purple-thumb.jpg"
+    },
+    {
+      "u": 4,
+      "c": 0,
+      "id": "super-saiyan",
+      "name": "Super Saiyajin",
+      "description": "Transformação · Super Saiyajin",
+      "prompt": "Use case: stylized-concept. One peaceful landscape anime browser wallpaper, 16:9. Adult Son Goku in his golden-haired Super Saiyan form, teal eyes, orange martial-arts outfit with blue undershirt, sitting relaxed on a grassy hill at sunrise, smiling calmly while looking at distant mountains. No fighting, no attacks, no weapons, no injuries. Show the recognizable golden hairstyle clearly. Soft golden rim light, blue sky, quiet green scenery. Character at the right, subdued open landscape on the left for browser text. Clean detailed cel-shaded illustration. No text or watermark.",
+      "file": "assets/characters/expanded-4-0-super-saiyan.jpg",
+      "thumbnail": "assets/characters/expanded-4-0-super-saiyan-thumb.jpg"
+    },
+    {
+      "u": 5,
+      "c": 3,
+      "id": "attack-titan",
+      "name": "Titã de Ataque",
+      "description": "Transformação · Titã de Ataque",
+      "prompt": "Use case: stylized-concept. Asset type: one standalone 16:9 anime browser wallpaper. Scene and subject: Eren Yeager in his Attack Titan form, muscular giant with long brown hair and pointed ears, intense green eyes, clearly designed stylized non-graphic titan anatomy, standing beyond ruined stone walls and abandoned medieval rooftops in dusk fog; no gore, no exposed organs, no humans being harmed. Premium cinematic cel-shaded anime illustration, clear and recognizable character design, coherent environment and story, accurate costume and anatomy. Place subject predominantly to the right, keep left third subdued and usable for browser text. Wide landscape at least 1536x864. No text, no watermark, no collage, no split panels, no UI. Do not combine unrelated character transformations or powers.",
+      "file": "assets/characters/expanded-5-3-attack-titan.jpg",
+      "thumbnail": "assets/characters/expanded-5-3-attack-titan-thumb.jpg"
+    },
+    {
+      "u": 0,
+      "c": 4,
+      "id": "crows",
+      "name": "Corvos ao luar",
+      "description": "Personagem · Itachi Uchiha",
+      "prompt": "Use case: stylized-concept. Asset type: one standalone 16:9 anime browser wallpaper. Scene and subject: Itachi Uchiha with long black hair, red Sharingan eyes, scratched Leaf headband, black Akatsuki cloak with red clouds, standing by an old lakeside wooden torii under a red moon, flock of ordinary black crows, subtle red reflected light; no random fox aura. Premium cinematic cel-shaded anime illustration, clear and recognizable character design, coherent environment and story, accurate costume and anatomy. Place subject predominantly to the right, keep left third subdued and usable for browser text. Wide landscape at least 1536x864. No text, no watermark, no collage, no split panels, no UI. Do not combine unrelated character transformations or powers.",
+      "file": "assets/characters/expanded-0-4-crows.jpg",
+      "thumbnail": "assets/characters/expanded-0-4-crows-thumb.jpg"
+    },
+    {
+      "u": 0,
+      "c": 5,
+      "id": "gentle-fist",
+      "name": "Punho Gentil",
+      "description": "Personagem · Hinata Hyuga",
+      "prompt": "Use case: stylized-concept. Asset type: one standalone 16:9 anime browser wallpaper. Scene and subject: adult Hinata Hyuga with long dark indigo hair, pale Byakugan eyes and temple veins, modest lavender shinobi jacket, Gentle Fist martial arts pose and subtle blue chakra around two palms, Hyuga wooden training courtyard at dawn, no armor or swords. Premium cinematic cel-shaded anime illustration, clear and recognizable character design, coherent environment and story, accurate costume and anatomy. Place subject predominantly to the right, keep left third subdued and usable for browser text. Wide landscape at least 1536x864. No text, no watermark, no collage, no split panels, no UI. Do not combine unrelated character transformations or powers.",
+      "file": "assets/characters/expanded-0-5-gentle-fist.jpg",
+      "thumbnail": "assets/characters/expanded-0-5-gentle-fist-thumb.jpg"
+    },
+    {
+      "u": 1,
+      "c": 4,
+      "id": "diable-jambe",
+      "name": "Diable Jambe",
+      "description": "Personagem · Sanji",
+      "prompt": "Use case: stylized-concept. Asset type: one standalone 16:9 anime browser wallpaper. Scene and subject: adult Sanji from One Piece, blond hair covering one eye, black suit and tie, one leg raised in a controlled Diable Jambe flaming kick, other leg supports his body, wooden Thousand Sunny deck and ocean at sunset, no cigarettes emphasized, no swords, realistic limb count. Premium cinematic cel-shaded anime illustration, clear and recognizable character design, coherent environment and story, accurate costume and anatomy. Place subject predominantly to the right, keep left third subdued and usable for browser text. Wide landscape at least 1536x864. No text, no watermark, no collage, no split panels, no UI. Do not combine unrelated character transformations or powers.",
+      "file": "assets/characters/expanded-1-4-diable-jambe.jpg",
+      "thumbnail": "assets/characters/expanded-1-4-diable-jambe-thumb.jpg"
+    },
+    {
+      "u": 1,
+      "c": 5,
+      "id": "flame-fist",
+      "name": "Punho de Fogo",
+      "description": "Personagem · Portgas D. Ace",
+      "prompt": "Use case: stylized-concept. Asset type: one standalone 16:9 anime browser wallpaper. Scene and subject: adult Portgas D. Ace from One Piece, black hair, freckles, orange hat with two round blue decorative badges, red bead necklace, open vest, one fiery fist, calm confident expression on a tropical island shore, orange flames reflected on blue sea, no injuries. Premium cinematic cel-shaded anime illustration, clear and recognizable character design, coherent environment and story, accurate costume and anatomy. Place subject predominantly to the right, keep left third subdued and usable for browser text. Wide landscape at least 1536x864. No text, no watermark, no collage, no split panels, no UI. Do not combine unrelated character transformations or powers.",
+      "file": "assets/characters/expanded-1-5-flame-fist.jpg",
+      "thumbnail": "assets/characters/expanded-1-5-flame-fist-thumb.jpg"
+    },
+    {
+      "u": 2,
+      "c": 4,
+      "id": "flame-breathing",
+      "name": "Respiração das Chamas",
+      "description": "Personagem · Kyojuro Rengoku",
+      "prompt": "Use case: stylized-concept. Asset type: one standalone 16:9 anime browser wallpaper. Scene and subject: Kyojuro Rengoku, golden hair with red tips, white flame-edged cape, dark Demon Slayer uniform, one nichirin katana held in two hands, broad controlled flame arc near a rural Taisho-era rail station at dusk, focused warm eyes, no train crash or injuries. Premium cinematic cel-shaded anime illustration, clear and recognizable character design, coherent environment and story, accurate costume and anatomy. Place subject predominantly to the right, keep left third subdued and usable for browser text. Wide landscape at least 1536x864. No text, no watermark, no collage, no split panels, no UI. Do not combine unrelated character transformations or powers.",
+      "file": "assets/characters/expanded-2-4-flame-breathing.jpg",
+      "thumbnail": "assets/characters/expanded-2-4-flame-breathing-thumb.jpg"
+    },
+    {
+      "u": 2,
+      "c": 5,
+      "id": "beast-breathing",
+      "name": "Respiração da Besta",
+      "description": "Personagem · Inosuke Hashibira",
+      "prompt": "Use case: stylized-concept. Asset type: one standalone 16:9 anime browser wallpaper. Scene and subject: Inosuke Hashibira wearing his iconic boar mask and fur belt with loose dark trousers, holding exactly two serrated nichirin blades, crouched on a mossy forest boulder, mountain forest and blue morning mist, athletic action pose without gore or animal harm. Premium cinematic cel-shaded anime illustration, clear and recognizable character design, coherent environment and story, accurate costume and anatomy. Place subject predominantly to the right, keep left third subdued and usable for browser text. Wide landscape at least 1536x864. No text, no watermark, no collage, no split panels, no UI. Do not combine unrelated character transformations or powers.",
+      "file": "assets/characters/expanded-2-5-beast-breathing.jpg",
+      "thumbnail": "assets/characters/expanded-2-5-beast-breathing-thumb.jpg"
+    },
+    {
+      "u": 3,
+      "c": 5,
+      "id": "rika",
+      "name": "Yuta e Rika",
+      "description": "Personagem · Yuta Okkotsu",
+      "prompt": "Use case: stylized-concept. Asset type: one standalone 16:9 anime browser wallpaper. Scene and subject: Yuta Okkotsu with dark messy hair, white high collar jacket, dark pants, one katana held low, spectral guardian Rika softly outlined behind him as a large stylized cursed spirit, empty Jujutsu High courtyard at blue hour, pale rose energy, no gore. Premium cinematic cel-shaded anime illustration, clear and recognizable character design, coherent environment and story, accurate costume and anatomy. Place subject predominantly to the right, keep left third subdued and usable for browser text. Wide landscape at least 1536x864. No text, no watermark, no collage, no split panels, no UI. Do not combine unrelated character transformations or powers.",
+      "file": "assets/characters/expanded-3-5-rika.jpg",
+      "thumbnail": "assets/characters/expanded-3-5-rika-thumb.jpg"
+    },
+    {
+      "u": 3,
+      "c": 6,
+      "id": "heavenly-restriction",
+      "name": "Restrição Celestial",
+      "description": "Personagem · Toji Fushiguro",
+      "prompt": "Use case: stylized-concept. Asset type: one standalone 16:9 anime browser wallpaper. Scene and subject: adult Toji Fushiguro with short black hair and small scar at corner of mouth, fitted black t-shirt and loose pale trousers, a single sheathed weapon held casually, old Japanese temple stone stairs in rain, physical power expressed through grounded posture rather than magical aura, no injuries. Premium cinematic cel-shaded anime illustration, clear and recognizable character design, coherent environment and story, accurate costume and anatomy. Place subject predominantly to the right, keep left third subdued and usable for browser text. Wide landscape at least 1536x864. No text, no watermark, no collage, no split panels, no UI. Do not combine unrelated character transformations or powers.",
+      "file": "assets/characters/expanded-3-6-heavenly-restriction.jpg",
+      "thumbnail": "assets/characters/expanded-3-6-heavenly-restriction-thumb.jpg"
+    },
+    {
+      "u": 4,
+      "c": 3,
+      "id": "future-trunks",
+      "name": "Trunks do Futuro",
+      "description": "Personagem · Trunks do Futuro",
+      "prompt": "Use case: stylized-concept. Asset type: one standalone 16:9 anime browser wallpaper. Scene and subject: adult Future Trunks from Dragon Ball Z with lavender straight hair, cropped blue jacket and dark pants, sword safely sheathed across his back, abandoned futuristic city slowly returning to nature, golden sunset, determined calm expression, no random energy wings. Premium cinematic cel-shaded anime illustration, clear and recognizable character design, coherent environment and story, accurate costume and anatomy. Place subject predominantly to the right, keep left third subdued and usable for browser text. Wide landscape at least 1536x864. No text, no watermark, no collage, no split panels, no UI. Do not combine unrelated character transformations or powers.",
+      "file": "assets/characters/expanded-4-3-future-trunks.jpg",
+      "thumbnail": "assets/characters/expanded-4-3-future-trunks-thumb.jpg"
+    },
+    {
+      "u": 4,
+      "c": 4,
+      "id": "gohan",
+      "name": "Gohan",
+      "description": "Personagem · Son Gohan",
+      "prompt": "Use case: stylized-concept. Asset type: one standalone 16:9 anime browser wallpaper. Scene and subject: adult Son Gohan with black spiky hair, purple martial arts gi and red belt, training at a grassy rocky plateau near Mount Paozu with a modest spherical-roof house in the distance, understated white aura, no transformation, hands correctly formed. Premium cinematic cel-shaded anime illustration, clear and recognizable character design, coherent environment and story, accurate costume and anatomy. Place subject predominantly to the right, keep left third subdued and usable for browser text. Wide landscape at least 1536x864. No text, no watermark, no collage, no split panels, no UI. Do not combine unrelated character transformations or powers.",
+      "file": "assets/characters/expanded-4-4-gohan.jpg",
+      "thumbnail": "assets/characters/expanded-4-4-gohan-thumb.jpg"
+    },
+    {
+      "u": 5,
+      "c": 3,
+      "id": "eren",
+      "name": "Eren Yeager",
+      "description": "Personagem · Eren Yeager",
+      "prompt": "Use case: stylized-concept. Asset type: one standalone 16:9 anime browser wallpaper. Scene and subject: adult Eren Yeager in human form, long brown tied-back hair and green eyes, dark coat over modest light shirt, standing on a windy seaside cliff gazing toward the horizon, cold ocean and cloudbreak, grounded contemplative mood, no titan parts or violence. Premium cinematic cel-shaded anime illustration, clear and recognizable character design, coherent environment and story, accurate costume and anatomy. Place subject predominantly to the right, keep left third subdued and usable for browser text. Wide landscape at least 1536x864. No text, no watermark, no collage, no split panels, no UI. Do not combine unrelated character transformations or powers.",
+      "file": "assets/characters/expanded-5-3-eren.jpg",
+      "thumbnail": "assets/characters/expanded-5-3-eren-thumb.jpg"
+    },
+    {
+      "u": 5,
+      "c": 4,
+      "id": "hange",
+      "name": "Hange Zoe",
+      "description": "Personagem · Hange Zoe",
+      "prompt": "Use case: stylized-concept. Asset type: one standalone 16:9 anime browser wallpaper. Scene and subject: adult Hange Zoe with brown tied-back hair and glasses, Survey Corps brown jacket and green cloak, examining a hand-drawn notebook on a stone wall observation post with steaming tea and surveying instruments, peaceful medieval city and evening sky, no legible text. Premium cinematic cel-shaded anime illustration, clear and recognizable character design, coherent environment and story, accurate costume and anatomy. Place subject predominantly to the right, keep left third subdued and usable for browser text. Wide landscape at least 1536x864. No text, no watermark, no collage, no split panels, no UI. Do not combine unrelated character transformations or powers.",
+      "file": "assets/characters/expanded-5-4-hange.jpg",
+      "thumbnail": "assets/characters/expanded-5-4-hange-thumb.jpg"
+    },
+    {
+      "u": 4,
+      "c": 3,
+      "id": "trunks-ssj",
+      "name": "Trunks Super Saiyajin",
+      "description": "Transformação · Super Saiyajin",
+      "prompt": "Use case: stylized-concept. Asset type: one standalone 16:9 anime browser wallpaper. Scene and subject: adult Future Trunks in Super Saiyan form, upright golden hair, teal eyes, cropped blue jacket, sword in a single two-handed defensive pose, ruined futuristic street with golden aura and dust, no enemies or gore. Premium cinematic cel-shaded anime illustration, clear and recognizable character design, coherent environment and story, accurate costume and anatomy. Place subject predominantly to the right, keep left third subdued and usable for browser text. Wide landscape at least 1536x864. No text, no watermark, no collage, no split panels, no UI. Do not combine unrelated character transformations or powers.",
+      "file": "assets/characters/expanded-4-3-trunks-ssj.jpg",
+      "thumbnail": "assets/characters/expanded-4-3-trunks-ssj-thumb.jpg"
+    },
+    {
+      "u": 4,
+      "c": 4,
+      "id": "gohan-ssj",
+      "name": "Gohan Super Saiyajin",
+      "description": "Transformação · Super Saiyajin",
+      "prompt": "Use case: stylized-concept. Asset type: one standalone 16:9 anime browser wallpaper. Scene and subject: adult Son Gohan in Super Saiyan form with upright golden hair and teal eyes, purple gi and red belt, bright restrained golden aura on rocky training plateau at dawn, two clenched hands naturally placed, no silver hair or beast form. Premium cinematic cel-shaded anime illustration, clear and recognizable character design, coherent environment and story, accurate costume and anatomy. Place subject predominantly to the right, keep left third subdued and usable for browser text. Wide landscape at least 1536x864. No text, no watermark, no collage, no split panels, no UI. Do not combine unrelated character transformations or powers.",
+      "file": "assets/characters/expanded-4-4-gohan-ssj.jpg",
+      "thumbnail": "assets/characters/expanded-4-4-gohan-ssj-thumb.jpg"
+    },
+    {
+      "u": 5,
+      "c": 4,
+      "id": "hange-lab",
+      "name": "Laboratório de Hange",
+      "description": "Cenário · Laboratório de Hange",
+      "prompt": "Use case: stylized-concept. Asset type: one standalone 16:9 anime browser wallpaper. Scene and subject: adult Hange Zoe wearing glasses and modest Survey Corps jacket in a warm lamplit stone laboratory, studying mechanical maneuver-gear components and map pins with thoughtful expression, no legible writing, no captive beings, coherent medieval engineering tools. Premium cinematic cel-shaded anime illustration, clear and recognizable character design, coherent environment and story, accurate costume and anatomy. Place subject predominantly to the right, keep left third subdued and usable for browser text. Wide landscape at least 1536x864. No text, no watermark, no collage, no split panels, no UI. Do not combine unrelated character transformations or powers.",
+      "file": "assets/characters/expanded-5-4-hange-lab.jpg",
+      "thumbnail": "assets/characters/expanded-5-4-hange-lab-thumb.jpg"
+    },
+    {
+      "u": 5,
+      "c": 3,
+      "id": "eren-wall",
+      "name": "Além das muralhas",
+      "description": "Cenário · Além das muralhas",
+      "prompt": "Use case: stylized-concept. Asset type: one standalone 16:9 anime browser wallpaper. Scene and subject: adult Eren Yeager in Survey Corps uniform, brown jacket and green cloak, two sheathed maneuver-gear blades and cables correctly attached at hips, standing on a vast stone wall at sunrise, rolling fields beyond and medieval city below, no combat or injuries. Premium cinematic cel-shaded anime illustration, clear and recognizable character design, coherent environment and story, accurate costume and anatomy. Place subject predominantly to the right, keep left third subdued and usable for browser text. Wide landscape at least 1536x864. No text, no watermark, no collage, no split panels, no UI. Do not combine unrelated character transformations or powers.",
+      "file": "assets/characters/expanded-5-3-eren-wall.jpg",
+      "thumbnail": "assets/characters/expanded-5-3-eren-wall-thumb.jpg"
+    },
+    {
+      "u": 4,
+      "c": 5,
+      "id": "videl-training",
+      "name": "Treino de voo",
+      "description": "Personagem · Videl",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Videl from Dragon Ball, short black hair, modest white sport shirt and dark shorts over leggings, learning to hover just above a grassy training field near Mount Paozu, white clouds and peaceful sunlight, no Saiyan transformation. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-4-5-videl-training.jpg",
+      "thumbnail": "assets/characters/expanded-4-5-videl-training-thumb.jpg"
+    },
+    {
+      "u": 4,
+      "c": 5,
+      "id": "videl-city",
+      "name": "Cidade de Satan",
+      "description": "Cenário · Cidade de Satan",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Videl in modest casual sport clothes, short black hair, standing on a futuristic city rooftop overlooking Satan City at sunset, calm brave pose, no energy aura. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-4-5-videl-city.jpg",
+      "thumbnail": "assets/characters/expanded-4-5-videl-city-thumb.jpg"
+    },
+    {
+      "u": 4,
+      "c": 2,
+      "id": "orange-piccolo",
+      "name": "Orange Piccolo",
+      "description": "Transformação · Orange Piccolo",
+      "prompt": "Use case: stylized-concept. Scene and subject: Piccolo in canonical Orange Piccolo transformation, orange skin, muscular bulky Namekian build, antennae, purple gi and blue sash, grounded powerful stance in a rocky wasteland, orange-gold aura, no Saiyan hair. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-4-2-orange-piccolo.jpg",
+      "thumbnail": "assets/characters/expanded-4-2-orange-piccolo-thumb.jpg"
+    },
+    {
+      "u": 4,
+      "c": 2,
+      "id": "unlocked-piccolo",
+      "name": "Potencial Despertado",
+      "description": "Transformação · Potencial Despertado",
+      "prompt": "Use case: stylized-concept. Scene and subject: Piccolo in his Potential Unleashed form from Dragon Ball Super Super Hero, yellow-green skin, Namekian antennae, purple gi, blue sash, subtle yellow aura, focused meditation beside a rocky desert pond, no orange bulky transformation and no hair. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-4-2-unlocked-piccolo.jpg",
+      "thumbnail": "assets/characters/expanded-4-2-unlocked-piccolo-thumb.jpg"
+    },
+    {
+      "u": 6,
+      "c": 0,
+      "id": "dragon-handle",
+      "name": "Punho do Dragão",
+      "description": "Cena · Punho do Dragão",
+      "prompt": "Use case: stylized-concept. Scene and subject: Meliodas from The Seven Deadly Sins, blond messy hair, youthful fantasy protagonist in a modest white shirt black vest and dark trousers, holding his broken sword with dragon handle outside the Boar Hat tavern at dawn. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-6-0-dragon-handle.jpg",
+      "thumbnail": "assets/characters/expanded-6-0-dragon-handle-thumb.jpg"
+    },
+    {
+      "u": 6,
+      "c": 0,
+      "id": "demon-mark",
+      "name": "Marca Demoníaca",
+      "description": "Cena · Marca Demoníaca",
+      "prompt": "Use case: stylized-concept. Scene and subject: Meliodas from The Seven Deadly Sins, blond messy hair, youthful fantasy protagonist in a modest white shirt black vest and dark trousers, canonical small black demon forehead mark and restrained black-purple aura, standing on a ruined castle bridge at dusk, no injuries. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-6-0-demon-mark.jpg",
+      "thumbnail": "assets/characters/expanded-6-0-demon-mark-thumb.jpg"
+    },
+    {
+      "u": 6,
+      "c": 0,
+      "id": "lostvayne",
+      "name": "Lostvayne",
+      "description": "Cena · Lostvayne",
+      "prompt": "Use case: stylized-concept. Scene and subject: Meliodas from The Seven Deadly Sins, blond messy hair, youthful fantasy protagonist in a modest white shirt black vest and dark trousers, holding the short green-hilted Lostvayne sword in a grassy Britannia valley, focused defensive pose. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-6-0-lostvayne.jpg",
+      "thumbnail": "assets/characters/expanded-6-0-lostvayne-thumb.jpg"
+    },
+    {
+      "u": 6,
+      "c": 0,
+      "id": "boar-hat",
+      "name": "Boar Hat",
+      "description": "Cena · Boar Hat",
+      "prompt": "Use case: stylized-concept. Scene and subject: Meliodas from The Seven Deadly Sins, blond messy hair, youthful fantasy protagonist in a modest white shirt black vest and dark trousers, seated on the Boar Hat tavern roof under stars overlooking green hills, calm expression. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-6-0-boar-hat.jpg",
+      "thumbnail": "assets/characters/expanded-6-0-boar-hat-thumb.jpg"
+    },
+    {
+      "u": 6,
+      "c": 1,
+      "id": "liones",
+      "name": "Reino de Liones",
+      "description": "Cena · Reino de Liones",
+      "prompt": "Use case: stylized-concept. Scene and subject: Elizabeth Liones from The Seven Deadly Sins, long silver hair with fringe over one eye, modest flowing pale dress, standing in a flower-filled Liones castle courtyard at dawn, blue eye visible. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-6-1-liones.jpg",
+      "thumbnail": "assets/characters/expanded-6-1-liones-thumb.jpg"
+    },
+    {
+      "u": 6,
+      "c": 1,
+      "id": "healing",
+      "name": "Luz de Cura",
+      "description": "Cena · Luz de Cura",
+      "prompt": "Use case: stylized-concept. Scene and subject: Elizabeth Liones from The Seven Deadly Sins, long silver hair with fringe over one eye, modest flowing pale dress, gentle golden healing light around her two hands in an empty cathedral, no injured people. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-6-1-healing.jpg",
+      "thumbnail": "assets/characters/expanded-6-1-healing-thumb.jpg"
+    },
+    {
+      "u": 6,
+      "c": 1,
+      "id": "goddess",
+      "name": "Poder da Deusa",
+      "description": "Cena · Poder da Deusa",
+      "prompt": "Use case: stylized-concept. Scene and subject: Elizabeth Liones from The Seven Deadly Sins, long silver hair with fringe over one eye, modest flowing pale dress, luminous feathered goddess wings and subtle goddess-eye symbol, graceful fully clothed stance above a quiet meadow. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-6-1-goddess.jpg",
+      "thumbnail": "assets/characters/expanded-6-1-goddess-thumb.jpg"
+    },
+    {
+      "u": 6,
+      "c": 1,
+      "id": "tavern",
+      "name": "Jardim do Boar Hat",
+      "description": "Cena · Jardim do Boar Hat",
+      "prompt": "Use case: stylized-concept. Scene and subject: Elizabeth Liones from The Seven Deadly Sins, long silver hair with fringe over one eye, modest flowing pale dress, tending flowers outside the Boar Hat tavern on a rainy afternoon. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-6-1-tavern.jpg",
+      "thumbnail": "assets/characters/expanded-6-1-tavern-thumb.jpg"
+    },
+    {
+      "u": 6,
+      "c": 2,
+      "id": "gideon",
+      "name": "Gideon",
+      "description": "Cena · Gideon",
+      "prompt": "Use case: stylized-concept. Scene and subject: Diane from The Seven Deadly Sins, giant young woman with brown twin ponytails, modest orange full-coverage adventure tunic and boots, holding her huge Gideon war hammer safely upright in a mountain valley, clear giant scale next to distant trees. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-6-2-gideon.jpg",
+      "thumbnail": "assets/characters/expanded-6-2-gideon-thumb.jpg"
+    },
+    {
+      "u": 6,
+      "c": 2,
+      "id": "earth",
+      "name": "Criação da Terra",
+      "description": "Cena · Criação da Terra",
+      "prompt": "Use case: stylized-concept. Scene and subject: Diane from The Seven Deadly Sins, giant young woman with brown twin ponytails, modest orange full-coverage adventure tunic and boots, performing earth manipulation, sculptural stone columns gently rising from an empty grassland, one pair of arms. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-6-2-earth.jpg",
+      "thumbnail": "assets/characters/expanded-6-2-earth-thumb.jpg"
+    },
+    {
+      "u": 6,
+      "c": 2,
+      "id": "valley",
+      "name": "Vale dos Gigantes",
+      "description": "Cena · Vale dos Gigantes",
+      "prompt": "Use case: stylized-concept. Scene and subject: Diane from The Seven Deadly Sins, giant young woman with brown twin ponytails, modest orange full-coverage adventure tunic and boots, resting on a rocky outcrop overlooking a vast green valley, peaceful giant scale. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-6-2-valley.jpg",
+      "thumbnail": "assets/characters/expanded-6-2-valley-thumb.jpg"
+    },
+    {
+      "u": 6,
+      "c": 2,
+      "id": "dance",
+      "name": "Dança de Drole",
+      "description": "Cena · Dança de Drole",
+      "prompt": "Use case: stylized-concept. Scene and subject: Diane from The Seven Deadly Sins, giant young woman with brown twin ponytails, modest orange full-coverage adventure tunic and boots, performing a grounded Drole-inspired dance step on broad stone terrain under a sunset, flowing rocks rather than fire. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-6-2-dance.jpg",
+      "thumbnail": "assets/characters/expanded-6-2-dance-thumb.jpg"
+    },
+    {
+      "u": 6,
+      "c": 3,
+      "id": "chastiefol",
+      "name": "Chastiefol",
+      "description": "Cena · Chastiefol",
+      "prompt": "Use case: stylized-concept. Scene and subject: King Harlequin from The Seven Deadly Sins, orange hair, modest teal and orange fairy outfit, floating seated beside his ornate green spear Chastiefol in the Fairy King forest. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-6-3-chastiefol.jpg",
+      "thumbnail": "assets/characters/expanded-6-3-chastiefol-thumb.jpg"
+    },
+    {
+      "u": 6,
+      "c": 3,
+      "id": "guardian",
+      "name": "Guardião",
+      "description": "Cena · Guardião",
+      "prompt": "Use case: stylized-concept. Scene and subject: King Harlequin from The Seven Deadly Sins, orange hair, modest teal and orange fairy outfit, his Chastiefol guardian form as a friendly large mossy spirit bear behind him in a luminous forest, no attack. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-6-3-guardian.jpg",
+      "thumbnail": "assets/characters/expanded-6-3-guardian-thumb.jpg"
+    },
+    {
+      "u": 6,
+      "c": 3,
+      "id": "fairy-king",
+      "name": "Rei das Fadas",
+      "description": "Cena · Rei das Fadas",
+      "prompt": "Use case: stylized-concept. Scene and subject: King Harlequin from The Seven Deadly Sins, orange hair, modest teal and orange fairy outfit, adult full-winged Fairy King form, large butterfly-like wings and longer orange hair, elegant fully clothed green outfit, overlooking the sacred forest. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-6-3-fairy-king.jpg",
+      "thumbnail": "assets/characters/expanded-6-3-fairy-king-thumb.jpg"
+    },
+    {
+      "u": 6,
+      "c": 3,
+      "id": "pillow",
+      "name": "Descanso na Floresta",
+      "description": "Cena · Descanso na Floresta",
+      "prompt": "Use case: stylized-concept. Scene and subject: King Harlequin from The Seven Deadly Sins, orange hair, modest teal and orange fairy outfit, resting on his floating green spirit-spear pillow beside a luminous fairy tree at blue hour. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-6-3-pillow.jpg",
+      "thumbnail": "assets/characters/expanded-6-3-pillow-thumb.jpg"
+    },
+    {
+      "u": 6,
+      "c": 4,
+      "id": "fox-sin",
+      "name": "Pecado da Raposa",
+      "description": "Cena · Pecado da Raposa",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Ban from The Seven Deadly Sins, silver spiky hair and red eyes, modest red leather jacket over dark shirt and trousers, standing casually on a weathered bridge in a medieval town at dusk, relaxed confident posture. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-6-4-fox-sin.jpg",
+      "thumbnail": "assets/characters/expanded-6-4-fox-sin-thumb.jpg"
+    },
+    {
+      "u": 6,
+      "c": 4,
+      "id": "snatch",
+      "name": "Snatch",
+      "description": "Cena · Snatch",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Ban from The Seven Deadly Sins, silver spiky hair and red eyes, modest red leather jacket over dark shirt and trousers, performing Snatch with a subtle transparent pulling ripple around one outstretched hand, empty medieval courtyard, no victims. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-6-4-snatch.jpg",
+      "thumbnail": "assets/characters/expanded-6-4-snatch-thumb.jpg"
+    },
+    {
+      "u": 6,
+      "c": 4,
+      "id": "coureshouse",
+      "name": "Courechouse",
+      "description": "Cena · Courechouse",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Ban from The Seven Deadly Sins, silver spiky hair and red eyes, modest red leather jacket over dark shirt and trousers, holding his canonical segmented three-section staff Courechouse in a wide defensive stance on an empty rocky plain. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-6-4-coureshouse.jpg",
+      "thumbnail": "assets/characters/expanded-6-4-coureshouse-thumb.jpg"
+    },
+    {
+      "u": 6,
+      "c": 4,
+      "id": "fairy-forest",
+      "name": "Floresta das Fadas",
+      "description": "Cena · Floresta das Fadas",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Ban from The Seven Deadly Sins, silver spiky hair and red eyes, modest red leather jacket over dark shirt and trousers, walking through a peaceful Fairy Forest with fireflies and enormous glowing roots at night. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-6-4-fairy-forest.jpg",
+      "thumbnail": "assets/characters/expanded-6-4-fairy-forest-thumb.jpg"
+    },
+    {
+      "u": 7,
+      "c": 0,
+      "id": "axel",
+      "name": "Aventureiro de Axel",
+      "description": "Cena · Aventureiro de Axel",
+      "prompt": "Use case: stylized-concept. Scene and subject: Kazuma Satou from Konosuba, brown hair, modest green cape over light adventurer tunic and dark trousers, standing at the entrance to Axel town holding an adventurer card with no legible writing. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-7-0-axel.jpg",
+      "thumbnail": "assets/characters/expanded-7-0-axel-thumb.jpg"
+    },
+    {
+      "u": 7,
+      "c": 0,
+      "id": "chunchunmaru",
+      "name": "Chunchunmaru",
+      "description": "Cena · Chunchunmaru",
+      "prompt": "Use case: stylized-concept. Scene and subject: Kazuma Satou from Konosuba, brown hair, modest green cape over light adventurer tunic and dark trousers, holding one short katana Chunchunmaru in a cautious pose on a grassy quest trail. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-7-0-chunchunmaru.jpg",
+      "thumbnail": "assets/characters/expanded-7-0-chunchunmaru-thumb.jpg"
+    },
+    {
+      "u": 7,
+      "c": 0,
+      "id": "guild",
+      "name": "Guilda de Aventureiros",
+      "description": "Cena · Guilda de Aventureiros",
+      "prompt": "Use case: stylized-concept. Scene and subject: Kazuma Satou from Konosuba, brown hair, modest green cape over light adventurer tunic and dark trousers, studying an unreadable quest board inside the warm wooden adventurers guild. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-7-0-guild.jpg",
+      "thumbnail": "assets/characters/expanded-7-0-guild-thumb.jpg"
+    },
+    {
+      "u": 7,
+      "c": 0,
+      "id": "camp",
+      "name": "Acampamento",
+      "description": "Cena · Acampamento",
+      "prompt": "Use case: stylized-concept. Scene and subject: Kazuma Satou from Konosuba, brown hair, modest green cape over light adventurer tunic and dark trousers, tending a small campfire beside a tent under a starlit fantasy sky. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-7-0-camp.jpg",
+      "thumbnail": "assets/characters/expanded-7-0-camp-thumb.jpg"
+    },
+    {
+      "u": 7,
+      "c": 0,
+      "id": "archery",
+      "name": "Arco e Flecha",
+      "description": "Cena · Arco e Flecha",
+      "prompt": "Use case: stylized-concept. Scene and subject: Kazuma Satou from Konosuba, brown hair, modest green cape over light adventurer tunic and dark trousers, practicing archery with a simple bow at an empty guild training ground, arrow aimed at a wooden target. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-7-0-archery.jpg",
+      "thumbnail": "assets/characters/expanded-7-0-archery-thumb.jpg"
+    },
+    {
+      "u": 7,
+      "c": 1,
+      "id": "water",
+      "name": "Magia da Água",
+      "description": "Cena · Magia da Água",
+      "prompt": "Use case: stylized-concept. Scene and subject: Aqua from Konosuba, long blue ponytail with blue orb hair ornament, modest blue and white fantasy dress with full coverage and opaque leggings, summoning a graceful arc of clear water beside a forest river, no flood victims. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-7-1-water.jpg",
+      "thumbnail": "assets/characters/expanded-7-1-water-thumb.jpg"
+    },
+    {
+      "u": 7,
+      "c": 1,
+      "id": "goddess",
+      "name": "Deusa da Água",
+      "description": "Cena · Deusa da Água",
+      "prompt": "Use case: stylized-concept. Scene and subject: Aqua from Konosuba, long blue ponytail with blue orb hair ornament, modest blue and white fantasy dress with full coverage and opaque leggings, standing in a quiet luminous water shrine with soft blue divine light. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-7-1-goddess.jpg",
+      "thumbnail": "assets/characters/expanded-7-1-goddess-thumb.jpg"
+    },
+    {
+      "u": 7,
+      "c": 1,
+      "id": "purification",
+      "name": "Purificação",
+      "description": "Cena · Purificação",
+      "prompt": "Use case: stylized-concept. Scene and subject: Aqua from Konosuba, long blue ponytail with blue orb hair ornament, modest blue and white fantasy dress with full coverage and opaque leggings, purifying a small pond with a gentle transparent blue circle, serene village background. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-7-1-purification.jpg",
+      "thumbnail": "assets/characters/expanded-7-1-purification-thumb.jpg"
+    },
+    {
+      "u": 7,
+      "c": 1,
+      "id": "fountain",
+      "name": "Fonte de Axel",
+      "description": "Cena · Fonte de Axel",
+      "prompt": "Use case: stylized-concept. Scene and subject: Aqua from Konosuba, long blue ponytail with blue orb hair ornament, modest blue and white fantasy dress with full coverage and opaque leggings, sitting peacefully beside the Axel town fountain at sunny midday. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-7-1-fountain.jpg",
+      "thumbnail": "assets/characters/expanded-7-1-fountain-thumb.jpg"
+    },
+    {
+      "u": 7,
+      "c": 1,
+      "id": "festival",
+      "name": "Festival das Lanternas",
+      "description": "Cena · Festival das Lanternas",
+      "prompt": "Use case: stylized-concept. Scene and subject: Aqua from Konosuba, long blue ponytail with blue orb hair ornament, modest blue and white fantasy dress with full coverage and opaque leggings, walking through a fantasy lantern festival, joyful expression, blue ribbons and floating water droplets. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-7-1-festival.jpg",
+      "thumbnail": "assets/characters/expanded-7-1-festival-thumb.jpg"
+    },
+    {
+      "u": 7,
+      "c": 2,
+      "id": "explosion",
+      "name": "Explosão",
+      "description": "Cena · Explosão",
+      "prompt": "Use case: stylized-concept. Scene and subject: Megumin from Konosuba, black hair and red eyes, large wizard hat, modest red full-length mage tunic with black cape and opaque leggings, entirely age-appropriate nonsexual depiction, casting a single distant stylized magical explosion above an empty rocky crater with her wooden staff, no people harmed. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-7-2-explosion.jpg",
+      "thumbnail": "assets/characters/expanded-7-2-explosion-thumb.jpg"
+    },
+    {
+      "u": 7,
+      "c": 2,
+      "id": "crimson-village",
+      "name": "Vila dos Demônios Carmesins",
+      "description": "Cena · Vila dos Demônios Carmesins",
+      "prompt": "Use case: stylized-concept. Scene and subject: Megumin from Konosuba, black hair and red eyes, large wizard hat, modest red full-length mage tunic with black cape and opaque leggings, entirely age-appropriate nonsexual depiction, standing on a forest path overlooking a quiet fantasy village at dusk. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-7-2-crimson-village.jpg",
+      "thumbnail": "assets/characters/expanded-7-2-crimson-village-thumb.jpg"
+    },
+    {
+      "u": 7,
+      "c": 2,
+      "id": "staff",
+      "name": "Cajado Carmesim",
+      "description": "Cena · Cajado Carmesim",
+      "prompt": "Use case: stylized-concept. Scene and subject: Megumin from Konosuba, black hair and red eyes, large wizard hat, modest red full-length mage tunic with black cape and opaque leggings, entirely age-appropriate nonsexual depiction, holding her wooden staff with glowing red crystal against moonlit mountains. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-7-2-staff.jpg",
+      "thumbnail": "assets/characters/expanded-7-2-staff-thumb.jpg"
+    },
+    {
+      "u": 7,
+      "c": 2,
+      "id": "study",
+      "name": "Estudos de Magia",
+      "description": "Cena · Estudos de Magia",
+      "prompt": "Use case: stylized-concept. Scene and subject: Megumin from Konosuba, black hair and red eyes, large wizard hat, modest red full-length mage tunic with black cape and opaque leggings, entirely age-appropriate nonsexual depiction, studying an open magical tome with abstract unreadable glyphs in a warm library. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-7-2-study.jpg",
+      "thumbnail": "assets/characters/expanded-7-2-study-thumb.jpg"
+    },
+    {
+      "u": 7,
+      "c": 2,
+      "id": "stargazing",
+      "name": "Céu Estrelado",
+      "description": "Cena · Céu Estrelado",
+      "prompt": "Use case: stylized-concept. Scene and subject: Megumin from Konosuba, black hair and red eyes, large wizard hat, modest red full-length mage tunic with black cape and opaque leggings, entirely age-appropriate nonsexual depiction, standing on a hill under a meteor-filled night sky with her cape moving in the breeze. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-7-2-stargazing.jpg",
+      "thumbnail": "assets/characters/expanded-7-2-stargazing-thumb.jpg"
+    },
+    {
+      "u": 7,
+      "c": 3,
+      "id": "crusader",
+      "name": "Cruzada",
+      "description": "Cena · Cruzada",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Darkness Lalatina from Konosuba, long blond ponytail, modest white and gold full-coverage knight armor over opaque black underlayer, holding a single longsword point down beside a medieval stone gate, heroic calm posture. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-7-3-crusader.jpg",
+      "thumbnail": "assets/characters/expanded-7-3-crusader-thumb.jpg"
+    },
+    {
+      "u": 7,
+      "c": 3,
+      "id": "training",
+      "name": "Treino da Espada",
+      "description": "Cena · Treino da Espada",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Darkness Lalatina from Konosuba, long blond ponytail, modest white and gold full-coverage knight armor over opaque black underlayer, practicing a two-handed sword stance at an empty sunlit knight training yard. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-7-3-training.jpg",
+      "thumbnail": "assets/characters/expanded-7-3-training-thumb.jpg"
+    },
+    {
+      "u": 7,
+      "c": 3,
+      "id": "castle",
+      "name": "Castelo de Lalatina",
+      "description": "Cena · Castelo de Lalatina",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Darkness Lalatina from Konosuba, long blond ponytail, modest white and gold full-coverage knight armor over opaque black underlayer, standing on a castle terrace overlooking green fields at dawn. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-7-3-castle.jpg",
+      "thumbnail": "assets/characters/expanded-7-3-castle-thumb.jpg"
+    },
+    {
+      "u": 7,
+      "c": 3,
+      "id": "shield",
+      "name": "Defesa",
+      "description": "Cena · Defesa",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Darkness Lalatina from Konosuba, long blond ponytail, modest white and gold full-coverage knight armor over opaque black underlayer, bracing behind a broad gold-edged shield on an empty forest trail, no battle damage. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-7-3-shield.jpg",
+      "thumbnail": "assets/characters/expanded-7-3-shield-thumb.jpg"
+    },
+    {
+      "u": 7,
+      "c": 3,
+      "id": "vigil",
+      "name": "Vigília Noturna",
+      "description": "Cena · Vigília Noturna",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Darkness Lalatina from Konosuba, long blond ponytail, modest white and gold full-coverage knight armor over opaque black underlayer, keeping watch under a castle archway at night lit by warm lanterns. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-7-3-vigil.jpg",
+      "thumbnail": "assets/characters/expanded-7-3-vigil-thumb.jpg"
+    },
+    {
+      "u": 8,
+      "c": 0,
+      "id": "human",
+      "name": "Denji",
+      "description": "Cena · Denji",
+      "prompt": "Use case: stylized-concept. Scene and subject: Denji from Chainsaw Man, blond messy hair, modest white shirt and black tie with black trousers, sitting on a quiet Tokyo rooftop beside Pochita the small orange chainsaw-dog with a gentle friendly expression, dawn. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-8-0-human.jpg",
+      "thumbnail": "assets/characters/expanded-8-0-human-thumb.jpg"
+    },
+    {
+      "u": 8,
+      "c": 0,
+      "id": "chainsaw",
+      "name": "Chainsaw Man",
+      "description": "Cena · Chainsaw Man",
+      "prompt": "Use case: stylized-concept. Scene and subject: Denji from Chainsaw Man, blond messy hair, modest white shirt and black tie with black trousers, canonical Chainsaw Man hybrid form with orange-red mechanical chainsaw head and one blade per forearm, fully clothed shirt and trousers, standing on an empty rainy city street, no blood or injuries. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-8-0-chainsaw.jpg",
+      "thumbnail": "assets/characters/expanded-8-0-chainsaw-thumb.jpg"
+    },
+    {
+      "u": 8,
+      "c": 0,
+      "id": "pochita",
+      "name": "Pochita",
+      "description": "Cena · Pochita",
+      "prompt": "Use case: stylized-concept. Scene and subject: Denji from Chainsaw Man, blond messy hair, modest white shirt and black tie with black trousers, holding Pochita gently while walking past a modest convenience store at dusk, no readable signs. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-8-0-pochita.jpg",
+      "thumbnail": "assets/characters/expanded-8-0-pochita-thumb.jpg"
+    },
+    {
+      "u": 8,
+      "c": 0,
+      "id": "public-safety",
+      "name": "Segurança Pública",
+      "description": "Cena · Segurança Pública",
+      "prompt": "Use case: stylized-concept. Scene and subject: Denji from Chainsaw Man, blond messy hair, modest white shirt and black tie with black trousers, standing in the corridor of a quiet Public Safety office, warm afternoon light. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-8-0-public-safety.jpg",
+      "thumbnail": "assets/characters/expanded-8-0-public-safety-thumb.jpg"
+    },
+    {
+      "u": 8,
+      "c": 0,
+      "id": "city",
+      "name": "Cidade ao Amanhecer",
+      "description": "Cena · Cidade ao Amanhecer",
+      "prompt": "Use case: stylized-concept. Scene and subject: Denji from Chainsaw Man, blond messy hair, modest white shirt and black tie with black trousers, running along an empty rooftop skyline as Chainsaw Man, chainsaw blades not touching any living being, no gore. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-8-0-city.jpg",
+      "thumbnail": "assets/characters/expanded-8-0-city-thumb.jpg"
+    },
+    {
+      "u": 8,
+      "c": 1,
+      "id": "blood-hammer",
+      "name": "Martelo de Sangue",
+      "description": "Cena · Martelo de Sangue",
+      "prompt": "Use case: stylized-concept. Scene and subject: Power from Chainsaw Man, blond-pink long hair, two small red horns, modest white shirt black tie and navy jacket with trousers, holding a large stylized solid crimson blood-magic hammer with clean glossy surface, empty urban courtyard, no wounds or gore. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-8-1-blood-hammer.jpg",
+      "thumbnail": "assets/characters/expanded-8-1-blood-hammer-thumb.jpg"
+    },
+    {
+      "u": 8,
+      "c": 1,
+      "id": "meowy",
+      "name": "Power e Meowy",
+      "description": "Cena · Power e Meowy",
+      "prompt": "Use case: stylized-concept. Scene and subject: Power from Chainsaw Man, blond-pink long hair, two small red horns, modest white shirt black tie and navy jacket with trousers, sitting with her small white cat Meowy in a cozy apartment with warm window light. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-8-1-meowy.jpg",
+      "thumbnail": "assets/characters/expanded-8-1-meowy-thumb.jpg"
+    },
+    {
+      "u": 8,
+      "c": 1,
+      "id": "public-safety",
+      "name": "Caçadora da Segurança Pública",
+      "description": "Cena · Caçadora da Segurança Pública",
+      "prompt": "Use case: stylized-concept. Scene and subject: Power from Chainsaw Man, blond-pink long hair, two small red horns, modest white shirt black tie and navy jacket with trousers, standing confidently at an empty Tokyo station platform, no readable signage. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-8-1-public-safety.jpg",
+      "thumbnail": "assets/characters/expanded-8-1-public-safety-thumb.jpg"
+    },
+    {
+      "u": 8,
+      "c": 1,
+      "id": "spear",
+      "name": "Lança Carmesim",
+      "description": "Cena · Lança Carmesim",
+      "prompt": "Use case: stylized-concept. Scene and subject: Power from Chainsaw Man, blond-pink long hair, two small red horns, modest white shirt black tie and navy jacket with trousers, a single clean stylized solid crimson blood-magic spear held upright on a rainy rooftop, no blood splashes. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-8-1-spear.jpg",
+      "thumbnail": "assets/characters/expanded-8-1-spear-thumb.jpg"
+    },
+    {
+      "u": 8,
+      "c": 1,
+      "id": "sunset",
+      "name": "Pôr do Sol Urbano",
+      "description": "Cena · Pôr do Sol Urbano",
+      "prompt": "Use case: stylized-concept. Scene and subject: Power from Chainsaw Man, blond-pink long hair, two small red horns, modest white shirt black tie and navy jacket with trousers, leaning calmly on an apartment balcony overlooking sunset city lights, no weapon. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-8-1-sunset.jpg",
+      "thumbnail": "assets/characters/expanded-8-1-sunset-thumb.jpg"
+    },
+    {
+      "u": 8,
+      "c": 2,
+      "id": "fox",
+      "name": "Contrato da Raposa",
+      "description": "Cena · Contrato da Raposa",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Aki Hayakawa from Chainsaw Man, dark hair in topknot, modest black Public Safety suit and tie, making a fox-shaped hand sign as a large translucent white fox spirit silhouette appears in the sky over an empty city street, no eating or injuries. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-8-2-fox.jpg",
+      "thumbnail": "assets/characters/expanded-8-2-fox-thumb.jpg"
+    },
+    {
+      "u": 8,
+      "c": 2,
+      "id": "katana",
+      "name": "Katana de Aki",
+      "description": "Cena · Katana de Aki",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Aki Hayakawa from Chainsaw Man, dark hair in topknot, modest black Public Safety suit and tie, holding a single sheathed katana at his side on a rainy pedestrian bridge. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-8-2-katana.jpg",
+      "thumbnail": "assets/characters/expanded-8-2-katana-thumb.jpg"
+    },
+    {
+      "u": 8,
+      "c": 2,
+      "id": "office",
+      "name": "Escritório",
+      "description": "Cena · Escritório",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Aki Hayakawa from Chainsaw Man, dark hair in topknot, modest black Public Safety suit and tie, reviewing an unreadable case folder by the window in a quiet Public Safety office. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-8-2-office.jpg",
+      "thumbnail": "assets/characters/expanded-8-2-office-thumb.jpg"
+    },
+    {
+      "u": 8,
+      "c": 2,
+      "id": "snow",
+      "name": "Neve Silenciosa",
+      "description": "Cena · Neve Silenciosa",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Aki Hayakawa from Chainsaw Man, dark hair in topknot, modest black Public Safety suit and tie, standing in a quiet snow-covered urban park wearing a dark winter coat, contemplative and peaceful. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-8-2-snow.jpg",
+      "thumbnail": "assets/characters/expanded-8-2-snow-thumb.jpg"
+    },
+    {
+      "u": 8,
+      "c": 2,
+      "id": "train",
+      "name": "Trem ao Entardecer",
+      "description": "Cena · Trem ao Entardecer",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Aki Hayakawa from Chainsaw Man, dark hair in topknot, modest black Public Safety suit and tie, standing inside an empty commuter train at sunset, subtle reflections and calm posture. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-8-2-train.jpg",
+      "thumbnail": "assets/characters/expanded-8-2-train-thumb.jpg"
+    },
+    {
+      "u": 8,
+      "c": 3,
+      "id": "control",
+      "name": "Olhar do Controle",
+      "description": "Cena · Olhar do Controle",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Makima from Chainsaw Man, long red braided hair, golden ringed eyes, modest white shirt black tie and dark trousers, standing composed on a rooftop with subtle concentric golden light rings reflected in her eyes, no puppets or victims. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-8-3-control.jpg",
+      "thumbnail": "assets/characters/expanded-8-3-control-thumb.jpg"
+    },
+    {
+      "u": 8,
+      "c": 3,
+      "id": "office",
+      "name": "Sala da Segurança Pública",
+      "description": "Cena · Sala da Segurança Pública",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Makima from Chainsaw Man, long red braided hair, golden ringed eyes, modest white shirt black tie and dark trousers, sitting at an orderly office desk with unreadable paperwork and warm sunlight. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-8-3-office.jpg",
+      "thumbnail": "assets/characters/expanded-8-3-office-thumb.jpg"
+    },
+    {
+      "u": 8,
+      "c": 3,
+      "id": "shrine",
+      "name": "Santuário",
+      "description": "Cena · Santuário",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Makima from Chainsaw Man, long red braided hair, golden ringed eyes, modest white shirt black tie and dark trousers, standing in a quiet stone shrine courtyard at dawn, hands folded, no ritual victims. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-8-3-shrine.jpg",
+      "thumbnail": "assets/characters/expanded-8-3-shrine-thumb.jpg"
+    },
+    {
+      "u": 8,
+      "c": 3,
+      "id": "rain",
+      "name": "Chuva em Tóquio",
+      "description": "Cena · Chuva em Tóquio",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Makima from Chainsaw Man, long red braided hair, golden ringed eyes, modest white shirt black tie and dark trousers, walking under a dark umbrella on a quiet rain-soaked Tokyo street, cinematic reflection. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-8-3-rain.jpg",
+      "thumbnail": "assets/characters/expanded-8-3-rain-thumb.jpg"
+    },
+    {
+      "u": 8,
+      "c": 3,
+      "id": "station",
+      "name": "Plataforma Vazia",
+      "description": "Cena · Plataforma Vazia",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Makima from Chainsaw Man, long red braided hair, golden ringed eyes, modest white shirt black tie and dark trousers, standing at an empty railway platform with a light beige trench coat, precise symmetrical architecture. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-8-3-station.jpg",
+      "thumbnail": "assets/characters/expanded-8-3-station-thumb.jpg"
+    },
+    {
+      "u": 9,
+      "c": 0,
+      "id": "hero",
+      "name": "Herói por Hobby",
+      "description": "Cena · Herói por Hobby",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Saitama from One Punch Man, bald head, yellow hero jumpsuit with red gloves and boots, white cape, standing casually on a city rooftop at sunrise, deadpan expression, cape fluttering. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-9-0-hero.jpg",
+      "thumbnail": "assets/characters/expanded-9-0-hero-thumb.jpg"
+    },
+    {
+      "u": 9,
+      "c": 0,
+      "id": "serious",
+      "name": "Série Séria",
+      "description": "Cena · Série Séria",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Saitama from One Punch Man, bald head, yellow hero jumpsuit with red gloves and boots, white cape, focused Serious Series expression and one gloved fist held forward, enormous controlled wind ripple in an empty rocky landscape, no enemies or casualties. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-9-0-serious.jpg",
+      "thumbnail": "assets/characters/expanded-9-0-serious-thumb.jpg"
+    },
+    {
+      "u": 9,
+      "c": 0,
+      "id": "shopping",
+      "name": "Dia de Compras",
+      "description": "Cena · Dia de Compras",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Saitama from One Punch Man, bald head, yellow hero jumpsuit with red gloves and boots, white cape, carrying a reusable grocery bag along a quiet Japanese shopping street, no readable signs. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-9-0-shopping.jpg",
+      "thumbnail": "assets/characters/expanded-9-0-shopping-thumb.jpg"
+    },
+    {
+      "u": 9,
+      "c": 0,
+      "id": "moon",
+      "name": "Silêncio Lunar",
+      "description": "Cena · Silêncio Lunar",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Saitama from One Punch Man, bald head, yellow hero jumpsuit with red gloves and boots, white cape, standing on a moon-like empty rocky surface with Earth in the distance, iconic white cape. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-9-0-moon.jpg",
+      "thumbnail": "assets/characters/expanded-9-0-moon-thumb.jpg"
+    },
+    {
+      "u": 9,
+      "c": 0,
+      "id": "apartment",
+      "name": "Apartamento",
+      "description": "Cena · Apartamento",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Saitama from One Punch Man, bald head, yellow hero jumpsuit with red gloves and boots, white cape, sitting in a modest clean apartment beside a small houseplant and cup of tea, modest casual long-sleeved shirt and trousers. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-9-0-apartment.jpg",
+      "thumbnail": "assets/characters/expanded-9-0-apartment-thumb.jpg"
+    },
+    {
+      "u": 9,
+      "c": 1,
+      "id": "incineration",
+      "name": "Canhão de Incineração",
+      "description": "Cena · Canhão de Incineração",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Genos from One Punch Man, blond spiky hair, serious expression, black shirt and metallic cyborg arms, directing golden palm incineration energy toward an empty distant rocky cliff, no casualties. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-9-1-incineration.jpg",
+      "thumbnail": "assets/characters/expanded-9-1-incineration-thumb.jpg"
+    },
+    {
+      "u": 9,
+      "c": 1,
+      "id": "core",
+      "name": "Núcleo de Energia",
+      "description": "Cena · Núcleo de Energia",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Genos from One Punch Man, blond spiky hair, serious expression, black shirt and metallic cyborg arms, standing under rain with a subtle bright gold cyborg core glow, futuristic empty city backdrop. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-9-1-core.jpg",
+      "thumbnail": "assets/characters/expanded-9-1-core-thumb.jpg"
+    },
+    {
+      "u": 9,
+      "c": 1,
+      "id": "training",
+      "name": "Treino do Discípulo",
+      "description": "Cena · Treino do Discípulo",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Genos from One Punch Man, blond spiky hair, serious expression, black shirt and metallic cyborg arms, practicing a grounded stance with both metallic arms visible on an empty training plateau. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-9-1-training.jpg",
+      "thumbnail": "assets/characters/expanded-9-1-training-thumb.jpg"
+    },
+    {
+      "u": 9,
+      "c": 1,
+      "id": "repair",
+      "name": "Manutenção",
+      "description": "Cena · Manutenção",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Genos from One Punch Man, blond spiky hair, serious expression, black shirt and metallic cyborg arms, sitting on a clean workshop bench while examining a detached spare mechanical hand, fully clothed, no body horror. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-9-1-repair.jpg",
+      "thumbnail": "assets/characters/expanded-9-1-repair-thumb.jpg"
+    },
+    {
+      "u": 9,
+      "c": 1,
+      "id": "city",
+      "name": "Guardião da Cidade",
+      "description": "Cena · Guardião da Cidade",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Genos from One Punch Man, blond spiky hair, serious expression, black shirt and metallic cyborg arms, keeping watch above a peaceful city at blue hour, metallic reflections and amber light. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-9-1-city.jpg",
+      "thumbnail": "assets/characters/expanded-9-1-city-thumb.jpg"
+    },
+    {
+      "u": 9,
+      "c": 2,
+      "id": "psychic",
+      "name": "Tornado do Terror",
+      "description": "Cena · Tornado do Terror",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Tatsumaki from One Punch Man, curled green hair, modest full-coverage dark green long-sleeved dress with opaque leggings, nonsexual depiction, levitating with green psychic aura and floating empty concrete blocks above an abandoned street, no injured people. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-9-2-psychic.jpg",
+      "thumbnail": "assets/characters/expanded-9-2-psychic-thumb.jpg"
+    },
+    {
+      "u": 9,
+      "c": 2,
+      "id": "sky",
+      "name": "Voo Psíquico",
+      "description": "Cena · Voo Psíquico",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Tatsumaki from One Punch Man, curled green hair, modest full-coverage dark green long-sleeved dress with opaque leggings, nonsexual depiction, hovering high above a clear city skyline under clouds, cape-like dress movement modestly controlled. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-9-2-sky.jpg",
+      "thumbnail": "assets/characters/expanded-9-2-sky-thumb.jpg"
+    },
+    {
+      "u": 9,
+      "c": 2,
+      "id": "barrier",
+      "name": "Barreira Psíquica",
+      "description": "Cena · Barreira Psíquica",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Tatsumaki from One Punch Man, curled green hair, modest full-coverage dark green long-sleeved dress with opaque leggings, nonsexual depiction, forming a translucent green spherical shield around an empty rooftop garden. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-9-2-barrier.jpg",
+      "thumbnail": "assets/characters/expanded-9-2-barrier-thumb.jpg"
+    },
+    {
+      "u": 9,
+      "c": 2,
+      "id": "headquarters",
+      "name": "Associação de Heróis",
+      "description": "Cena · Associação de Heróis",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Tatsumaki from One Punch Man, curled green hair, modest full-coverage dark green long-sleeved dress with opaque leggings, nonsexual depiction, standing confidently at the entrance to a futuristic Hero Association headquarters, no readable logo. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-9-2-headquarters.jpg",
+      "thumbnail": "assets/characters/expanded-9-2-headquarters-thumb.jpg"
+    },
+    {
+      "u": 9,
+      "c": 2,
+      "id": "night",
+      "name": "Cidade Verde",
+      "description": "Cena · Cidade Verde",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Tatsumaki from One Punch Man, curled green hair, modest full-coverage dark green long-sleeved dress with opaque leggings, nonsexual depiction, floating over an empty park at night with subtle green reflected light and distant skyline. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-9-2-night.jpg",
+      "thumbnail": "assets/characters/expanded-9-2-night-thumb.jpg"
+    },
+    {
+      "u": 9,
+      "c": 3,
+      "id": "martial",
+      "name": "Artes Marciais",
+      "description": "Cena · Artes Marciais",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Garou from One Punch Man, swept silver-white hair, modest fitted dark martial arts shirt and loose trousers, performing a flowing Water Stream Rock Smashing Fist stance in a quiet traditional dojo, no opponent. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-9-3-martial.jpg",
+      "thumbnail": "assets/characters/expanded-9-3-martial-thumb.jpg"
+    },
+    {
+      "u": 9,
+      "c": 3,
+      "id": "hunt",
+      "name": "Caminho do Lutador",
+      "description": "Cena · Caminho do Lutador",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Garou from One Punch Man, swept silver-white hair, modest fitted dark martial arts shirt and loose trousers, walking alone along a rocky mountain path at dusk, calm focused expression. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-9-3-hunt.jpg",
+      "thumbnail": "assets/characters/expanded-9-3-hunt-thumb.jpg"
+    },
+    {
+      "u": 9,
+      "c": 3,
+      "id": "monster",
+      "name": "Despertar de Garou",
+      "description": "Cena · Despertar de Garou",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Garou from One Punch Man, swept silver-white hair, modest fitted dark martial arts shirt and loose trousers, canonical stylized awakened armored Garou silhouette, dark organic armor with angular horns and restrained red highlights, empty rocky crater, no gore or cosmic form. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-9-3-monster.jpg",
+      "thumbnail": "assets/characters/expanded-9-3-monster-thumb.jpg"
+    },
+    {
+      "u": 9,
+      "c": 3,
+      "id": "training",
+      "name": "Treino na Chuva",
+      "description": "Cena · Treino na Chuva",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Garou from One Punch Man, swept silver-white hair, modest fitted dark martial arts shirt and loose trousers, training a precise two-hand martial arts stance in an empty rain-soaked courtyard. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-9-3-training.jpg",
+      "thumbnail": "assets/characters/expanded-9-3-training-thumb.jpg"
+    },
+    {
+      "u": 9,
+      "c": 3,
+      "id": "dawn",
+      "name": "Além do Limite",
+      "description": "Cena · Além do Limite",
+      "prompt": "Use case: stylized-concept. Scene and subject: adult Garou from One Punch Man, swept silver-white hair, modest fitted dark martial arts shirt and loose trousers, standing on a mountain ridge at dawn with wind-blown silver hair, human form and no aura. One standalone cinematic cel-shaded anime browser wallpaper, wide landscape 16:9 at least 1536x864, coherent canonical costume, correct anatomy and powers, subject mainly on right, left third subdued for browser text. No words, letters, watermark, UI, collage, duplicated limbs or unrelated powers. Fully clothed age-appropriate characters; no sexualization, no gore.",
+      "file": "assets/characters/expanded-9-3-dawn.jpg",
+      "thumbnail": "assets/characters/expanded-9-3-dawn-thumb.jpg"
+    }
+  ]
+}

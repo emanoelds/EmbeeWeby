@@ -1,0 +1,7 @@
+#updates-check[hidden],#updates-install[hidden],#updates-cancel[hidden],#updates-progress[hidden],#updates-help[hidden],#updates-disconnect[hidden],#updates-access[hidden],#private-update-access[hidden]{display:none!important}
+#updates-progress{display:block;height:8px;width:100%;margin:18px 0;border:0;border-radius:99px;overflow:hidden;accent-color:var(--accent-ink)}
+#updates-progress::-webkit-progress-bar{background:var(--line);border-radius:99px}#updates-progress::-webkit-progress-value{background:var(--accent-ink);border-radius:99px;transition:width .2s ease}
+#updates-access{margin-top:24px;padding:16px;border:1px solid var(--line);border-radius:14px}#updates-access>summary{cursor:pointer;font-weight:600;padding:4px}#updates-access[open]>summary{margin-bottom:14px}
+@media(prefers-reduced-motion:reduce){#updates-progress::-webkit-progress-value{transition:none}}
+
+.anime-featured-gallery{scroll-margin-top:96px}

@@ -11,7 +11,7 @@ function applyAnimeScene(universeIndex,characterIndex){
  const scene=animeScenes[universeIndex]||animeScenes[0],palette=scene.colors[characterIndex]||scene.colors[0];
  document.body.dataset.anime=scene.id;document.body.dataset.character=String(characterIndex);
  const root=document.documentElement.style;
- const artwork=selectedArtwork(universeIndex,characterIndex);root.setProperty('--wallpaper',`url("${artwork?.file||'assets/themes/'+scene.id+'.png'}")`);document.body.dataset.decoration=theme.decoration||'balanced';document.body.dataset.artwork=artwork?'character':'scene';
+ const artwork=selectedArtwork(universeIndex,characterIndex);root.setProperty('--wallpaper',`url("${artwork?.file||scene.file||'assets/themes/'+scene.id+'.png'}")`);document.body.dataset.decoration=theme.decoration||'balanced';document.body.dataset.artwork=artwork?'character':'scene';
  root.setProperty('--secondary',palette[1]);root.setProperty('--scene-pattern',scene.id==='demon-slayer'&&characterIndex===0?'repeating-conic-gradient(#35b88e22 0% 25%,transparent 0% 50%)':'none');
  const title=document.querySelector('.hero h1');if(title)title.textContent=scene.headline;
  const copy=document.querySelector('.hero-copy>p');if(copy)copy.textContent=scene.label+' · '+palette[2]+'.';
