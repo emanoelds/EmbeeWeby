@@ -1,0 +1,7 @@
+/* An isolated, non-interactive layer between the wallpaper and new-tab content. */
+#home-page{isolation:isolate;position:relative}
+#home-page>#theme-particles{position:absolute;inset:0 0 auto;width:100%;z-index:0;pointer-events:none!important;user-select:none;contain:strict;opacity:1}
+#home-page>#theme-particles[hidden]{display:none!important}
+#home-page:has(#theme-particles)>.brand-effects{display:none}
+body.reduced #theme-particles{display:none!important}
+@media(prefers-reduced-motion:reduce){#theme-particles{display:none!important}}
