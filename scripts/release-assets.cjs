@@ -1,0 +1,10 @@
+const fs=require('node:fs'),path=require('node:path');
+const token=process.env.GH_TOKEN,repo=process.env.GH_REPO,tag=process.env.RELEASE_TAG;
+if(!token||!repo||!tag)throw Error('Missing release environment');
+const headers={Authorization:'Bearer '+token,Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'};
+async function request(url,options={}){const r=await fetch(url,{...options,headers:{...headers,...options.headers}});if(!r.ok)throw Error('Release API HTTP '+r.status+': '+(await r.text()).slice(0,500));return r.status===204?null:r.json()}
+(async()=>{const root='https://api.github.com/repos/'+repo;const releases=await request(root+'/releases?per_page=30');const release=releases.find(r=>r.tag_name===tag);if(!release)throw Error('Release draft missing: '+tag);
+if(process.argv[2]==='publish'){await request(root+'/releases/'+release.id,{method:'PATCH',headers:{'Content-Type':'application/json'},body:JSON.stringify({draft:false,make_latest:'true'})});console.log('Published '+tag);return}
+const files=fs.readdirSync('dist').filter(f=>/\.(exe|AppImage|dmg|zip|blockmap)$/.test(f)||/^latest.*\.yml$/.test(f));if(!files.length)throw Error('No installer assets');
+for(const name of files){const file=path.join('dist',name),size=fs.statSync(file).size;let done=false;for(let attempt=1;attempt<=3&&!done;attempt++){try{const assets=await request(root+'/releases/'+release.id+'/assets');const old=assets.find(a=>a.name===name);if(old)await request(root+'/releases/assets/'+old.id,{method:'DELETE'});const blob=await fs.openAsBlob(file);const asset=await request(release.upload_url.replace(/\{.*$/,'')+'?name='+encodeURIComponent(name),{method:'POST',headers:{'Content-Type':'application/octet-stream'},body:blob});if(asset.size!==size||asset.state!=='uploaded')throw Error('Incomplete upload '+name);console.log('Uploaded '+name+' ('+size+' bytes)');done=true}catch(e){if(attempt===3)throw e;console.log('Retry upload '+name);await new Promise(r=>setTimeout(r,attempt*3000))}}}
+})().catch(e=>{console.error(e.message);process.exitCode=1});
