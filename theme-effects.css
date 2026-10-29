@@ -5,3 +5,9 @@
 #home-page:has(#theme-particles)>.brand-effects{display:none}
 body.reduced #theme-particles{display:none!important}
 @media(prefers-reduced-motion:reduce){#theme-particles{display:none!important}}
+/* Keep the character artwork framed to the viewport, not the full scrollable document. */
+body[data-anime]:not([data-anime=custom]) main#home-page{background-attachment:fixed;background-repeat:no-repeat}
+body[data-anime]:not([data-anime=custom]) main#home-page{background-image:none}
+#home-page>.theme-wallpaper-viewport{display:none;position:fixed;inset:var(--chrome-height,112px) 0 0 var(--sidebar-width,76px);z-index:-1;pointer-events:none;background-image:linear-gradient(90deg,rgba(9,15,25,.94),rgba(9,15,25,.60) 58%,rgba(9,15,25,.30)),var(--wallpaper);background-size:cover,var(--anime-wallpaper-size,cover);background-position:center,var(--anime-wallpaper-position,75% 50%);background-repeat:no-repeat}
+body[data-anime]:not([data-anime=custom]) #home-page>.theme-wallpaper-viewport{display:block}
+body.light #home-page>.theme-wallpaper-viewport{background-image:linear-gradient(90deg,rgba(247,249,252,.97),rgba(247,249,252,.80) 58%,rgba(247,249,252,.48)),var(--wallpaper)}
