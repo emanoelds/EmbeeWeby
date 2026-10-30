@@ -1,6 +1,6 @@
 {
   "tool": "image_gen.imagegen built-in",
-  "reference": "assets/bee-icon.png",
+  "reference": "assets/brands/theme-logo-legacy.png",
   "images": [
     {
       "path": "assets/brands/embeeweby-circuit-v3.png",

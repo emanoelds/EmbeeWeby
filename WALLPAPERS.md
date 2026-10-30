@@ -1,6 +1,6 @@
 # Wallpapers Embee — versão minimalista 2
 
-Modo: ferramenta integrada image_gen, com referência assets/bee-icon.png. Imagens originais preservadas no diretório generated_images do Codex.
+Modo: ferramenta integrada image_gen, com referência assets/brands/theme-logo-legacy.png. Imagens originais preservadas no diretório generated_images do Codex.
 
 EmbeeWeby: identidade minimalista, fundo azul-marinho discreto, abelha original em linhas douradas à direita, octógono sutil e circuitos quase imperceptíveis; espaço vazio à esquerda, sem texto, objetos 3D ou cenários.
 
