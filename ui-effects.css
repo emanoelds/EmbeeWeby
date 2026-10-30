@@ -1,0 +1,9 @@
+body.interface-fx :is(.rail button,.toolbar>button,.shortcut,.wallpaper-option,.universe-card,.settings-nav-item,.bookmark-popover button){transition:background-color .18s ease,border-color .18s ease,box-shadow .22s ease,filter .22s ease,transform .22s cubic-bezier(.2,.7,.2,1)}
+body.interface-fx :is(.shortcut,.wallpaper-option,.universe-card):hover{transform:translateY(-3px);box-shadow:0 8px 25px #0003,0 0 18px color-mix(in srgb,var(--accent) 12%,transparent)}
+body.interface-fx :is(.rail button,.toolbar>button,.settings-nav-item,.bookmark-popover button):hover{box-shadow:inset 0 0 15px color-mix(in srgb,var(--accent) 8%,transparent)}
+.ui-fx-host{position:relative;overflow:hidden}.ui-energy-ripple{position:absolute;width:12px;height:12px;margin:-6px;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--accent) 40%,transparent),transparent 70%);pointer-events:none;user-select:none;z-index:2;animation:ui-energy-press .5s ease-out forwards}
+@keyframes ui-energy-press{from{opacity:.7;transform:scale(1)}to{opacity:0;transform:scale(22)}}
+body.interface-fx .bookmark-popover{animation:ui-menu-reveal .2s cubic-bezier(.2,.8,.2,1)}@keyframes ui-menu-reveal{from{opacity:0;transform:translateY(-5px) scale(.98)}to{opacity:1;transform:none}}
+body.interface-fx :is(input[type=checkbox],input[type=radio]):checked{box-shadow:0 0 12px color-mix(in srgb,var(--accent) 22%,transparent)}
+body.reduced :is(.ui-energy-ripple,.bookmark-popover){animation:none!important}body.reduced.interface-fx :is(.shortcut,.wallpaper-option,.universe-card):hover{transform:none}body.reduced .ui-energy-ripple{display:none}
+@media(prefers-reduced-motion:reduce){.ui-energy-ripple{display:none}body.interface-fx :is(.shortcut,.wallpaper-option,.universe-card):hover{transform:none}body.interface-fx .bookmark-popover{animation:none}}
