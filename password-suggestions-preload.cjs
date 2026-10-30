@@ -1,0 +1,2 @@
+const {contextBridge,ipcRenderer}=require('electron');
+contextBridge.exposeInMainWorld('passwordSuggestions',{onFirst:fn=>ipcRenderer.on('password-suggestions-first',fn),onData:fn=>ipcRenderer.on('password-suggestions-data',(_event,data)=>fn(data)),choose:id=>ipcRenderer.send('password-suggestions-choose',id),manage:()=>ipcRenderer.send('password-suggestions-manage'),close:()=>ipcRenderer.send('password-suggestions-close')});
