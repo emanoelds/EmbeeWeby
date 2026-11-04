@@ -1,6 +1,6 @@
 {
   "name": "embeeweby",
-  "version": "0.9.21",
+  "version": "0.9.22",
   "private": true,
   "description": "Seu universo. Sua navegação.",
   "main": "main.cjs",
@@ -152,7 +152,7 @@
       {
         "provider": "github",
         "owner": "emanoelds",
-        "repo": "EmbeeWebi",
+        "repo": "EmbeeWeby",
         "private": true,
         "releaseType": "release"
       }
