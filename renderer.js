@@ -93,3 +93,33 @@ function portalDrag(item,portal,index){item.draggable=true;item.title='Arraste p
 
 
 function smoothMenuContent(node){if(!node||reducedMotion())return;node.getAnimations().forEach(a=>a.cancel());node.animate([{opacity:.3,transform:'translateY(7px)'},{opacity:1,transform:'translateY(0)'}],{duration:180,easing:'cubic-bezier(.2,.75,.25,1)'})}
+
+function initHomeScrollbar() {
+ const page = document.querySelector('#home-page');
+ const scrollbar = document.createElement('input');
+ scrollbar.id = 'home-scrollbar';
+ scrollbar.type = 'range';
+ scrollbar.min = '0';
+ scrollbar.setAttribute('aria-label', 'Rolar a nova guia');
+ page.after(scrollbar);
+ const sync = () => {
+  const max = Math.max(0, page.scrollHeight - page.clientHeight);
+  scrollbar.hidden = page.hidden || max === 0;
+  scrollbar.max = String(max);
+  scrollbar.value = String(page.scrollTop);
+  scrollbar.style.setProperty('--home-thumb-height', Math.max(36, scrollbar.clientHeight * page.clientHeight / (page.scrollHeight || 1)) + 'px');
+ };
+ scrollbar.addEventListener('input', () => { page.scrollTop = scrollbar.valueAsNumber; });
+ scrollbar.addEventListener('wheel', event => {
+  event.preventDefault();
+  const unit = event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? page.clientHeight : 1;
+  page.scrollTop += event.deltaY * unit;
+ }, {passive: false});
+ page.addEventListener('scroll', sync, {passive: true});
+ const sizes = new ResizeObserver(sync);
+ sizes.observe(page);
+ for (const section of page.querySelectorAll(':scope > section, :scope > footer')) sizes.observe(section);
+ new MutationObserver(sync).observe(page, {attributes: true, attributeFilter: ['hidden']});
+ sync();
+}
+initHomeScrollbar();
