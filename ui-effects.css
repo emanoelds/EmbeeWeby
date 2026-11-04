@@ -7,3 +7,80 @@ body.interface-fx .bookmark-popover{animation:ui-menu-reveal .2s cubic-bezier(.2
 body.interface-fx :is(input[type=checkbox],input[type=radio]):checked{box-shadow:0 0 12px color-mix(in srgb,var(--accent) 22%,transparent)}
 body.reduced :is(.ui-energy-ripple,.bookmark-popover){animation:none!important}body.reduced.interface-fx :is(.shortcut,.wallpaper-option,.universe-card):hover{transform:none}body.reduced .ui-energy-ripple{display:none}
 @media(prefers-reduced-motion:reduce){.ui-energy-ripple{display:none}body.interface-fx :is(.shortcut,.wallpaper-option,.universe-card):hover{transform:none}body.interface-fx .bookmark-popover{animation:none}}
+
+/* The new tab uses a visible native track, including when the wallpaper is bright. */
+#home-page {
+  overflow-y: scroll;
+  scrollbar-width: auto;
+  scrollbar-color: auto;
+}
+#home-page::-webkit-scrollbar { width: 13px; }
+#home-page::-webkit-scrollbar-track {
+  background: color-mix(in srgb, var(--bg) 94%, var(--accent));
+  box-shadow: inset 1px 0 color-mix(in srgb, var(--accent) 17%, transparent);
+}
+#home-page::-webkit-scrollbar-thumb {
+  min-height: 36px;
+  border: 3px solid var(--bg);
+  border-radius: 20px;
+  background: linear-gradient(180deg, var(--accent-ink, var(--accent)), color-mix(in srgb, var(--accent-ink, var(--accent)) 58%, var(--bg)));
+}
+#home-page::-webkit-scrollbar-thumb:hover,
+#home-page::-webkit-scrollbar-thumb:active {
+  border-width: 2px;
+  background: var(--accent-ink, var(--accent));
+}
+
+body > .rail {
+  width: var(--sidebar-panel-width, 76px);
+  visibility: visible;
+}
+body.sidebar-hidden:not(.site-fullscreen) > .rail {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-100%);
+}
+.rail .personalization-gem {
+  display: block;
+  width: 26px;
+  height: 26px;
+  pointer-events: none;
+  filter: drop-shadow(0 0 5px #ffcc43a6);
+}
+body.interface-fx > .rail {
+  transition: transform .28s cubic-bezier(.2,.8,.2,1), opacity .22s ease, visibility 0s;
+}
+body.interface-fx.sidebar-hidden > .rail {
+  transition: transform .24s ease-in, opacity .24s ease-in, visibility 0s .24s;
+}
+body.interface-fx .rail :is(.nav-symbol,.personalization-gem),
+body.interface-fx #sidebar-toggle img {
+  transition: transform .23s cubic-bezier(.2,.8,.2,1), filter .23s ease;
+}
+body.interface-fx .rail button:hover .nav-symbol { transform: scale(1.12); }
+body.interface-fx .rail button:hover .personalization-gem {
+  filter: drop-shadow(0 0 8px #ffd53ae6);
+  transform: rotate(-7deg);
+}
+body.interface-fx #sidebar-toggle:hover img { transform: rotate(-6deg) scale(1.08); }
+body.interface-fx #sidebar-toggle:active img { transform: scale(.92); }
+body.interface-fx .rail button:active .nav-symbol { transform: scale(.91); }
+body.interface-fx:not(.sidebar-hidden) .rail > button { animation: rail-item-enter .28s both; }
+body.interface-fx:not(.sidebar-hidden) .rail > button:nth-child(2) { animation-delay: 22ms; }
+body.interface-fx:not(.sidebar-hidden) .rail > button:nth-child(3) { animation-delay: 44ms; }
+body.interface-fx:not(.sidebar-hidden) .rail > button:nth-child(4) { animation-delay: 66ms; }
+body.interface-fx:not(.sidebar-hidden) .rail > button:nth-child(5) { animation-delay: 88ms; }
+@keyframes rail-item-enter {
+  from { opacity: 0; translate: -7px 0; }
+  to { opacity: 1; translate: 0 0; }
+}
+body.reduced.interface-fx :is(.rail,.rail button,.rail .nav-symbol,.rail .personalization-gem,#sidebar-toggle img) {
+  animation: none !important;
+  transition: none !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  body.interface-fx :is(.rail,.rail button,.rail .nav-symbol,.rail .personalization-gem,#sidebar-toggle img) {
+    animation: none !important;
+    transition: none !important;
+  }
+}

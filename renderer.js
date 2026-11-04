@@ -65,7 +65,19 @@ initAddressUI();
 
 initBrowserMenus();
 
-initBrowserTools();initWeather();initDownloadsUI();for(const b of document.querySelectorAll('.rail [data-panel]')){const symbol=b.querySelector('.nav-symbol');if(symbol)symbol.replaceChildren(settingsIcon(({themes:'appearance',bookmarks:'bookmarks',history:'history',notes:'copy',downloads:'export',settings:'settings',account:'account'})[b.dataset.panel]||'settings'))}document.querySelector('#capture .nav-symbol').replaceChildren(browserIcon('capture'));const space=el('div');space.id='tab-drop-space';space.setAttribute('aria-label','Arraste links ou abas aqui');document.querySelector('.window-controls').before(space);
+initBrowserTools();initWeather();initDownloadsUI();for(const b of document.querySelectorAll('.rail [data-panel]')){const symbol=b.querySelector('.nav-symbol');if (!symbol) continue;
+ if (b.dataset.panel === 'themes') {
+  const gem = el('img', undefined, 'personalization-gem');
+  gem.src = 'assets/yellow-emerald.svg';
+  gem.alt = '';
+  gem.draggable = false;
+  symbol.replaceChildren(gem);
+  b.title = 'Personalização';
+  b.setAttribute('aria-label', 'Personalização');
+  symbol.nextElementSibling.textContent = 'Personalização';
+  continue;
+ }
+ symbol.replaceChildren(settingsIcon(({bookmarks:'bookmarks',history:'history',notes:'copy',downloads:'export',settings:'settings',account:'account'})[b.dataset.panel]||'settings'))}document.querySelector('#capture .nav-symbol').replaceChildren(browserIcon('capture'));const space=el('div');space.id='tab-drop-space';space.setAttribute('aria-label','Arraste links ou abas aqui');document.querySelector('.window-controls').before(space);
 
 initConnectionSecurity();normalizeBookmarks();initTabReordering();initLinkTabDrop();initEmptyTabDrops();initHistoryTools();renderBookmarkBar();
 
