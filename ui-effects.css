@@ -15,36 +15,29 @@ body.reduced :is(.ui-energy-ripple,.bookmark-popover){animation:none!important}b
   padding-right: calc(5.2% + 16px);
 }
 #home-scrollbar {
-  appearance: none;
   position: fixed;
   z-index: 4;
-  top: calc(var(--chrome-height, 112px) + 9px);
-  right: 5px;
+  inset: calc(var(--chrome-height, 112px) + 9px) 5px 9px auto;
   width: 14px;
-  height: calc(100% - var(--chrome-height, 112px) - 18px);
-  margin: 0;
-  padding: 0;
-  writing-mode: vertical-lr;
-  direction: ltr;
   border: 1px solid color-mix(in srgb, var(--accent) 32%, var(--bg));
   border-radius: 12px;
   background: color-mix(in srgb, var(--bg) 88%, var(--accent));
-  cursor: ns-resize;
+  cursor: pointer;
+  touch-action: none;
+  user-select: none;
 }
-#home-scrollbar::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 100%;
-}
-#home-scrollbar::-webkit-slider-thumb {
-  appearance: none;
-  width: 10px;
-  height: var(--home-thumb-height, 40px);
-  margin-left: 1px;
+#home-scrollbar .scroll-thumb {
+  position: absolute;
+  top: 0;
+  left: 1px;
+  right: 1px;
   border: 1px solid color-mix(in srgb, var(--accent) 68%, white);
   border-radius: 10px;
   background: linear-gradient(var(--accent), color-mix(in srgb, var(--accent) 62%, var(--bg)));
   box-shadow: 0 0 7px color-mix(in srgb, var(--accent) 44%, transparent);
+  cursor: grab;
 }
+#home-scrollbar:active .scroll-thumb { cursor: grabbing; }
 #home-scrollbar:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 #home-scrollbar[hidden], body.site-fullscreen #home-scrollbar { display: none; }
 
@@ -100,4 +93,17 @@ body.reduced.interface-fx :is(.rail,.rail button,.rail .nav-symbol,.rail .person
     animation: none !important;
     transition: none !important;
   }
+}
+
+.rail .personalization-gem {
+  width: 29px;
+  height: 34px;
+  filter: drop-shadow(0 0 3px #fff894) drop-shadow(0 0 7px #ffbb28cc);
+}
+body.interface-fx .rail .personalization-gem {
+  animation: emerald-shine 2.8s ease-in-out infinite;
+}
+@keyframes emerald-shine {
+  0%, 100% { filter: drop-shadow(0 0 3px #fff894) drop-shadow(0 0 5px #ffbb28b0); }
+  50% { filter: drop-shadow(0 0 5px #fffbd0) drop-shadow(0 0 10px #ffc637f0); }
 }

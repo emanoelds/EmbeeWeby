@@ -96,24 +96,70 @@ function smoothMenuContent(node){if(!node||reducedMotion())return;node.getAnimat
 
 function initHomeScrollbar() {
  const page = document.querySelector('#home-page');
- const scrollbar = document.createElement('input');
+ const scrollbar = el('div');
+ const thumb = el('div', undefined, 'scroll-thumb');
  scrollbar.id = 'home-scrollbar';
- scrollbar.type = 'range';
- scrollbar.min = '0';
+ scrollbar.tabIndex = 0;
+ scrollbar.setAttribute('role', 'scrollbar');
  scrollbar.setAttribute('aria-label', 'Rolar a nova guia');
+ scrollbar.setAttribute('aria-controls', page.id);
+ scrollbar.setAttribute('aria-orientation', 'vertical');
+ scrollbar.setAttribute('aria-valuemin', '0');
+ scrollbar.append(thumb);
  page.after(scrollbar);
+
+ let pointerId = null;
+ let grabOffset = 0;
+ let max = 0;
+ let travel = 0;
  const sync = () => {
-  const max = Math.max(0, page.scrollHeight - page.clientHeight);
+  max = Math.max(0, page.scrollHeight - page.clientHeight);
   scrollbar.hidden = page.hidden || max === 0;
-  scrollbar.max = String(max);
-  scrollbar.value = String(page.scrollTop);
-  scrollbar.style.setProperty('--home-thumb-height', Math.max(36, scrollbar.clientHeight * page.clientHeight / (page.scrollHeight || 1)) + 'px');
+  if (scrollbar.hidden) return;
+  const trackHeight = scrollbar.clientHeight;
+  const thumbHeight = Math.min(trackHeight, Math.max(32, trackHeight * page.clientHeight / page.scrollHeight));
+  travel = trackHeight - thumbHeight;
+  thumb.style.height = thumbHeight + 'px';
+  thumb.style.transform = 'translateY(' + (page.scrollTop / max * travel) + 'px)';
+  scrollbar.setAttribute('aria-valuemax', String(max));
+  scrollbar.setAttribute('aria-valuenow', String(Math.round(page.scrollTop)));
  };
- scrollbar.addEventListener('input', () => { page.scrollTop = scrollbar.valueAsNumber; });
+ const move = event => {
+  if (travel <= 0) return;
+  const trackTop = scrollbar.getBoundingClientRect().top + scrollbar.clientTop;
+  page.scrollTo({top: (event.clientY - trackTop - grabOffset) / travel * max, behavior: 'instant'});
+  sync();
+ };
+ scrollbar.addEventListener('pointerdown', event => {
+  if (event.button !== 0 || pointerId !== null) return;
+  pointerId = event.pointerId;
+  const rect = thumb.getBoundingClientRect();
+  const onThumb = event.target === thumb;
+  grabOffset = onThumb ? event.clientY - rect.top : rect.height / 2;
+  scrollbar.setPointerCapture(pointerId);
+  if (!onThumb) move(event);
+ });
+ scrollbar.addEventListener('pointermove', event => {
+  if (event.pointerId === pointerId) move(event);
+ });
+ scrollbar.addEventListener('lostpointercapture', () => { pointerId = null; });
+ scrollbar.addEventListener('keydown', event => {
+  const positions = {
+   ArrowDown: page.scrollTop + 40,
+   ArrowUp: page.scrollTop - 40,
+   PageDown: page.scrollTop + page.clientHeight,
+   PageUp: page.scrollTop - page.clientHeight,
+   Home: 0,
+   End: max
+  };
+  if (!Object.hasOwn(positions, event.key)) return;
+  event.preventDefault();
+  page.scrollTo({top: positions[event.key], behavior: 'instant'});
+ });
  scrollbar.addEventListener('wheel', event => {
   event.preventDefault();
   const unit = event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? page.clientHeight : 1;
-  page.scrollTop += event.deltaY * unit;
+  page.scrollTo({top: page.scrollTop + event.deltaY * unit, behavior: 'instant'});
  }, {passive: false});
  page.addEventListener('scroll', sync, {passive: true});
  const sizes = new ResizeObserver(sync);
